@@ -1,7 +1,7 @@
 const QHgamepad = formatMessage => ({
     name: formatMessage({
         id: 'QHgamepad.name',
-        default: 'Passive Buzzer'
+        default: 'IOT-PRO'
     }),
     extensionId: 'QHgamepad',
     version: '1.0.0',

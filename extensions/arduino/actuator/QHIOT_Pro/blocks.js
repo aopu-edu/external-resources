@@ -39,7 +39,7 @@ function addBlocks (Blockly) {
                         name: 'speed'
                     }     
                 ],
-                "tooltip": "IOT_PRO电机控制",
+                "tooltip": "IOT_PRO电机控制，-255~255 正数为正转，负数为反转，0为停止。",
                 colour: QH_IOTPRO_COLOR,
                 extensions: ['shape_statement']
             });
@@ -220,23 +220,23 @@ function addBlocks (Blockly) {
                 args1: [
                     {
                         type: "field_checkbox",
-                        name: "S1",
+                        name: "D1",
                     },
                     {
                         type: "field_checkbox",
-                        name: "S2",
+                        name: "D2",
                     },
                     {
                         type: "field_checkbox",
-                        name: "S3",
+                        name: "D3",
                     },       
                     {
                         type: "field_checkbox",
-                        name: "S4",
+                        name: "D4",
                     },
                     {
                         type: "field_checkbox",
-                        name: "S5",
+                        name: "D5",
                     },
                 ],
                 "tooltip": "勾选对应功能为ON时，主控板D0~D4对应接传感器D1~D5,如果状态符合返回True.否则返回False.碰撞传感器可以使用数字读取块读取状态,",

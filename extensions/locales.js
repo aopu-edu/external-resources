@@ -55,9 +55,17 @@ module.exports = {
         'ultrasonic.name': 'Ultrasonic',
         'ultrasonic.description': 'Standard ultrasonic distance measurement module.',
         'servo.name': 'Servo',
-        'servo.description': 'Classic servo support for microbit.'
+        'servo.description': 'Classic servo support for microbit.',
+        'QHgamepad.name':'QHgamepad',
+        'QHgamepad.description':'It\'s a wireless remote controller with an ESP32 core',
+        'QHIOT_Pro.name':'QHIOT_Pro',
+        'QHIOT_Pro.description':'This is an advanced IOT control board at the core of ESP32.'
     },
     'zh-cn': {
+        'QHgamepad.name':'物联遥控器',
+        'QHgamepad.description':'可编程的ESP32无线遥控器。',
+        'QHIOT_Pro.name':'物联控制核心板',
+        'QHIOT_Pro.description':'ESP32核心的高级物联控制主板。',
         'chineseTTS.name': '中文 TTS',
         'chineseTTS.description': '基于 SYN6288 的语音合成模块, 支持中文、英文字母以及数字。',
         'l298n.description': '常见的高功率双路电机驱动模块。',

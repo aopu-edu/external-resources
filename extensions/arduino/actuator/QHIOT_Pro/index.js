@@ -1,7 +1,7 @@
 const QHIOT_Pro = formatMessage => ({
     name: formatMessage({
         id: 'QHIOT_Pro.name',
-        default: 'Passive Buzzer'
+        default: 'QHIOT_Pro'
     }),
     extensionId: 'QHIOT_Pro',
     version: '1.0.0',
@@ -10,7 +10,7 @@ const QHIOT_Pro = formatMessage => ({
     iconURL: `asset/QHIOT_Pro.png`,
     description: formatMessage({
         id: 'QHIOT_Pro.description',
-        default: 'It\'s a wireless remote controller with an ESP32 core'
+        default: 'This is an advanced IOT control board at the core of ESP32.'
     }),
     featured: true,
     blocks: 'blocks.js',

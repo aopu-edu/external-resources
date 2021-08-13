@@ -97,11 +97,11 @@ function addGenerator (Blockly) {
 
     //获取巡线传感器状态
     Blockly.Arduino.IOT_PRO_GET_LINESENSOR_STATE = function() {
-      var S1 = this.getFieldValue('S1') == 'TRUE'?'0':'1';
-      var S2 = this.getFieldValue('S2') == 'TRUE'?'0':'1';
-      var S3 = this.getFieldValue('S3') == 'TRUE'?'0':'1';
-      var S4 = this.getFieldValue('S4') == 'TRUE'?'0':'1';
-      var S5 = this.getFieldValue('S5') == 'TRUE'?'0':'1';
+      var S1 = this.getFieldValue('D1') == 'TRUE'?'0':'1';
+      var S2 = this.getFieldValue('D2') == 'TRUE'?'0':'1';
+      var S3 = this.getFieldValue('D3') == 'TRUE'?'0':'1';
+      var S4 = this.getFieldValue('D4') == 'TRUE'?'0':'1';
+      var S5 = this.getFieldValue('D5') == 'TRUE'?'0':'1';
       var S='0B'+S5+S4+S3+S2+S1;
       Blockly.Arduino.definitions_['include_QH_IOT_PRO'] = '#include <QH_IOT_PRO.h>';  
       Blockly.Arduino.definitions_['var_declare_ESP32Encoder'] ='QH_IOT_PRO QH_IOT_PRO;';
