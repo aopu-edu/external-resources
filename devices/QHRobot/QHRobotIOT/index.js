@@ -1,5 +1,5 @@
 const QDPRobotIOT = formatMessage => ({
-    name: 'QDPRobot IOT',
+    name: 'QDPRobot ESP8266',
     deviceId: 'QDPRobotIOT_arduinoEsp8266',
     manufactor: 'QDPRobot',
     leanMore: 'https://qdprobot.taobao.com',
