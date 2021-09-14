@@ -31,7 +31,8 @@ Blockly.Arduino.SimpleBlynk_init = function() {
   Blockly.Arduino.setups_['setup_SimpleBlynk_init'+pin1+pin2] = 'SimpleBlynk.init(&P'+pin1+pin2+');'
   }
   Blockly.Arduino.setups_['setup_SimpleBlynk_init_setWIFI_Auth'] = "SimpleBlynk.SendConfigWIFI("+wifi_ssid+","+wifi_pass+");\ndelay(500);\nSimpleBlynk.SendConfigAuth("+auth+","+ip+");\n"
-  var code= 'SimpleBlynk.Recieve();\n';
+  Blockly.Arduino.loops_['setup_SimpleBlynk_Recieve'] = 'SimpleBlynk.Recieve();\n';
+  var code= '';
   return code;
 };
 
