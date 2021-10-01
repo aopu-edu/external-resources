@@ -8425,7 +8425,7 @@ function addGenerator (Blockly) {
         +'}\n'
         +'return false;\n'
         +'}\n';
-        Blockly.Arduino.setups_['setup_qdprobot_serial']= 'Serial.begin(9600);';
+        Blockly.Arduino.setups_['setup_qdprobot_serial']= 'Serial.begin(115200);';
         var code = 'portReceived_Serial('+num+')';
 
         }
