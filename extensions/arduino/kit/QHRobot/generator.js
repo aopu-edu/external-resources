@@ -560,7 +560,7 @@ function addGenerator (Blockly) {
         Blockly.Arduino.definitions_['define_qdportPWM2'] = '#include "QDP16PWM.h"';
         Blockly.Arduino.definitions_['var_declare_qdprobot_PWM'+dropdown_pin] = 'QDP16PWM pwm'+dropdown_pin+' = QDP16PWM(0x4'+dropdown_pin+');\n';
         Blockly.Arduino.setups_['setup_output_PWM'+dropdown_pin] ='pwm'+dropdown_pin+'.begin();\n';
-        var code = 'pwm'+dropdown_pin+'.setDegree1('+num2+','+num1+');\n';
+        var code = 'pwm'+dropdown_pin+'.setDegree1('+num1+','+num2+');\n';
         return code;
     };
     //舵机板360度设置参数
