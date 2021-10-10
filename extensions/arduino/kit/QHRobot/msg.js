@@ -428,7 +428,7 @@ function addMsg (Blockly) {
 		QH_servomotorPWM_set180:'舵机板180° 板号 %1 [参数设置] PWM下限值 范围(1-4095) %2 PWM 上限值 范围(2-4096) %3',
 		QH_servomotorPWM:'舵机板180° 板号 %1 舵机号(0~15) %2 角度 %3 ',
 		QH_servomotorPWM_set360:'舵机板360° 板号 %1 [参数设置] PWM停止值 %2 PWM 正转下限值  %3 PWM 正转上限值  %4 PWM 反转下限值  %5 PWM 反转上限值  %6 ',
-		QH_servomotorPWM360:'舵机板360° 板号 %1 方向 %2 舵机号(0`15)  %3 速度(0`10) %4',
+		QH_servomotorPWM360:'舵机板360° 板号 %1 方向 %2 舵机号(0-15)  %3 速度(0-10) %4',
 		QH_Voice:'语音模块 端口 %1 播放 %2 延时 %3 ',
 		QH_VoicePlayValue:'语音模块 端口 %1 播放数字值 %2',
 		QH_ASR_SendData:'发送到齐护语音识别 端口 %1 指令 %2',
