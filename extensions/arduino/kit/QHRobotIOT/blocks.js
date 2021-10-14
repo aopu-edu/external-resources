@@ -60,6 +60,9 @@ function addBlocks (Blockly) {
 
     var mailType = [['163.com','5'],['139.com','4']];
 
+    const QH_yssb_delay = [["700", "700"],["2.4", "2_4"],["24", "24"],["50", "50"],["101", "101"],["154", "154"]];
+    const QH_yssb_gain = [["1", "1"],["4", "4"],["16", "16"],["60", "60"]];
+
     const QH_MATRIX_ICO = 'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB0PSIxNjIzNDYwODQzNzk2IiBjbGFzcz0iaWNvbiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9Ijc4MjEiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNDgiIGhlaWdodD0iNDgiPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PC9zdHlsZT48L2RlZnM+PHBhdGggZD0iTTEzMCAxMjhtLTExNCAwYTcuMTI1IDcuMTI1IDAgMSAwIDIyOCAwIDcuMTI1IDcuMTI1IDAgMSAwLTIyOCAwWiIgcC1pZD0iNzgyMiI+PC9wYXRoPjxwYXRoIGQ9Ik01MTQgMTI4bS0xMTQgMGE3LjEyNSA3LjEyNSAwIDEgMCAyMjggMCA3LjEyNSA3LjEyNSAwIDEgMC0yMjggMFoiIHAtaWQ9Ijc4MjMiPjwvcGF0aD48cGF0aCBkPSJNODk4IDEyOG0tMTE0IDBhNy4xMjUgNy4xMjUgMCAxIDAgMjI4IDAgNy4xMjUgNy4xMjUgMCAxIDAtMjI4IDBaIiBwLWlkPSI3ODI0Ij48L3BhdGg+PHBhdGggZD0iTTEzMCA1MTJtLTExNCAwYTcuMTI1IDcuMTI1IDAgMSAwIDIyOCAwIDcuMTI1IDcuMTI1IDAgMSAwLTIyOCAwWiIgcC1pZD0iNzgyNSI+PC9wYXRoPjxwYXRoIGQ9Ik01MTQgNTEybS0xMTQgMGE3LjEyNSA3LjEyNSAwIDEgMCAyMjggMCA3LjEyNSA3LjEyNSAwIDEgMC0yMjggMFoiIHAtaWQ9Ijc4MjYiPjwvcGF0aD48cGF0aCBkPSJNODk4IDUxMm0tMTE0IDBhNy4xMjUgNy4xMjUgMCAxIDAgMjI4IDAgNy4xMjUgNy4xMjUgMCAxIDAtMjI4IDBaIiBwLWlkPSI3ODI3Ij48L3BhdGg+PHBhdGggZD0iTTEzMCA4OTZtLTExNCAwYTcuMTI1IDcuMTI1IDAgMSAwIDIyOCAwIDcuMTI1IDcuMTI1IDAgMSAwLTIyOCAwWiIgcC1pZD0iNzgyOCI+PC9wYXRoPjxwYXRoIGQ9Ik01MTQgODk2bS0xMTQgMGE3LjEyNSA3LjEyNSAwIDEgMCAyMjggMCA3LjEyNSA3LjEyNSAwIDEgMC0yMjggMFoiIHAtaWQ9Ijc4MjkiPjwvcGF0aD48cGF0aCBkPSJNODk4IDg5Nm0tMTE0IDBhNy4xMjUgNy4xMjUgMCAxIDAgMjI4IDAgNy4xMjUgNy4xMjUgMCAxIDAtMjI4IDBaIiBwLWlkPSI3ODMwIj48L3BhdGg+PC9zdmc+';
 
     const QH_Button_ICO ='data:image/png;base64,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';
@@ -77,6 +80,11 @@ function addBlocks (Blockly) {
     const QH_Soilmoisture_ICO = "data:image/png;base64,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";
 
     const QH_dht11_ICO = "data:image/png;base64,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";
+
+    const QH_yssb_ICO = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABmJLR0QA/wD/AP+gvaeTAAAHKUlEQVR4nO2baWxVRRTHf6WFttDSIrJYQAUVggsipAaUGCUSDMS4JUYlQGiMgBsECSQqgooiGgSjohgRJRooWkmMC6BGgxipIotSRJKySKkCrSzKotTWD+ddOXfeXd+97/HB909OUt6cc2bmzszZZoAsssgii/8xcjLcX0egF9ADKAbygRLgBPAH8CfQCOwCfgFa0j2gdH6AEuDqBA0BLk/8FhTHgR3AD8AXwJfA7pjHGDuKgVHAB8BJZAXjpJ3AXODSuAYc1w7oCUwGKoAiD74GoBb4FTiAbPumRFtxQrZ7gnoBeR66NgGLgDeBvyKMPRJ6AG8jkzBX6x9gI/AsMBIoC6m7ABgITAQqgf0OfbQAdcAkoG20qYRDITALOOYwoK3ANODcmPvMBa4FFgKHHPqtA26OuU9H9AdqjM6bgU+AYUQ7VmXIbhkFlAOtXPjaAfcAP5P8IVYC3SKMwROTSTZu1cDgiHq7AsuAU4buHcANHnJ5wDhOu0yLDgJDI47Jhlxk6+lOjiQ6d1vxrsCFQGsf3d1InoBpS0b76CgCnsf+AU8hCxYZ+Yhb04P6CjjfgbcAeATYp3hPAm8hlt0JH+M+eYtOAOcFGOsQkj/mggByrsgFqgyFi3Fe1RLgO49JHESCIY0+HvwmzQ045o5I4JSKbBLeMBTN9OBdhv8kdmF3VxUBZPSuC4p8YLkh/1gIeUD8r1bwpAfvRYgnCDKRCUrugYAyLUjgEwa5wAol3wzcGVR4AHZr/4oP/wSPgZtUpeRGpigHssrjgNXANuT4zUcMr4U2wBql4xjixj2RB2xRQtUJRV6YEWIia5VcO8Q2BJG7Q8n1IjkWseg4MEbxlmKPF9bjE6s8qJiPEMz63h3iA1SmILuO00FRW5wDIE1NSFBm4WLsO9r1KJRiDzOnBJg8SNhrBjFuNNZBfgbi7534vwE6Kd5pAfvZhn2l56m2areJTFVMNXhnYybMQMltUG6B0QDExdYgGeMq5Iyb/N8G6McinTZ3wb5I2lYAMlkdRIwxGXxQiN3gmLQH8RZR0ejRh0k3GbKfqrZRpuLhqnEf3oavC2LATOQB9yMrben6DbHOZweYXBB4hc0mXW/IPqfaktz6a6rRKXLqDSxBrGwL4lc34vAlE2gHdCD+spsZ4LjRScSmacxU7XNMxXWq8UqjbThSvXHr7HUyV2AdRLCg61UH2RdV+6O6oUw1HMaeh3cHjgboMJbMKyD0SjrRFqC9g9wGxWMrntyoGj4zhOb7dGZRAxKdZQoVJJfJmpAaoVP1uZ/iOwV01o33qcaXDEG3iMuJhkSeVji0RspkFciKdnXhy0EW1hrnSpPhKdX4sNHWQPAPcFuU2aQRz2DfJQOtBuusFyrmo4bwgRAd7U9ldGlEKbAUmK5+WwB8b/3DivRaFINZiFwN9A3Q2e9IlHYmUIZUoyz0BK5DjrZ2hSuxf4z/MBv3I9ADSYr8tv/UiJMIi3LgPeQ+McjxfBkPI62LH6YRBBiB8x2ARUtxL2GnAw/hnjyZ9CPi5TwxQgmsceG5BHgfuYayeGsQCxw2CCpA3FLYC1NITp+bkdC9VtF6ZFFuIeDCdFEKD/kI5SMV4VRi+6FIFfhvYxI/Iam3U36h0QkJ1Cy5VUhxJBbsVIoH+vCGRRuCpcvbSa4cawzCvrX9KlWhoAc4O0a9OcA7JG/bvcgRMm+aGoELPHTNAT5EqjyxYqgaxE6kqhoHxmKf4LvIfYCFIiSF1snWZjJrVAGZ8G41iDhuWlshhRBL5yIP3nJOp9otwO0x9B8aU9QANhGuJOaEq5S+/fgbuVnYd0rGUYK95DQpoj6dZC0OwN9X8WfkPZB5zo5gLxU9QfiXHRraVe4JwF+v/g4bH6QEJ0OzEHnlAVJUWEzqBvGw+vucAPz6YUODC4/fMYoF5dhLyC+kqGew0lGHPWFxwuOKf4VD+72Jca3D/91BZEzH7r4mpqAjD7kRtnTM8+C9DLsrvNWBR3upfimMJxRysL8NaALGp6BnHPYPuQR75aYV4vJ04WUDycezt2o/RobKb4XIvbyewNOET37MSLAJKamvJflytBF7oGRBF0JXh+w/EkqBr7EPcjnJNXcv5CFlar9coBbn62vzFrkihXlEQhGSeenB1hM+WrwGiePNbHAvssLFLnI6T6kj5iQoKHKRl1jmpYQZ2wdBWySZGYx/OnuX0WcqdihWDMNu2VuQ6kwVyTdKUTEa+zPcj8j8E39HFCGlM6crqmrEhYbdFRodEG9h1go6ewmdCVyBHAG3+lwNcn7HI9vd6yV5LrKD5pF8FbedaCF52tEHeVLn938EmhFrXov4+s+RO/vN2EtdmiqBszI3lWhojzxmqsT7NjkIbSUDNYF0GpQCpB7QH6nz9UMsv5cLq0d2RBXiLlvSOD4g8xY1F0lzSxNUkvitESmY1LuLZpFFFllkETv+BVi7qUSP0y+aAAAAAElFTkSuQmCC";
+
+      const QH_MPU6050_ICO = "data:image/png;base64,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";
+
 
     const QH_LOAD_ICO = 'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB0PSIxNjIzNDg5NDM5MjgyIiBjbGFzcz0iaWNvbiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9IjMzMTUiIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PC9zdHlsZT48L2RlZnM+PHBhdGggZD0iTTU3NiAzMDR2NjRoMTkyYTQ4IDQ4IDAgMCAxIDQ4IDQ4djE3Nmg2NHYtOTcuMzc2bDE0LjA4LTE0LjA4Qzk2MS4yMTYgNTEwLjQ2NCAxMDA4IDU3Ny43NiAxMDA4IDY1NnMtNDYuNzg0IDE0NS41MzYtMTEzLjkyIDE3NS40NTZsLTE0LjA4LTE0LjA4VjcyMGgtNjR2ODBhNDggNDggMCAwIDEtNDggNDhIMzA0YTk2IDk2IDAgMCAxLTk2LTk2di04MEgxNDR2OTZhMzIgMzIgMCAwIDEtMzIgMzJINDhhMzIgMzIgMCAwIDEtMzItMzJWNDQ4YTMyIDMyIDAgMCAxIDMyLTMyaDY0YTMyIDMyIDAgMCAxIDMyIDMydjk2aDY0di0xMjhhNDggNDggMCAwIDEgNDgtNDhoMTkydi02NGgtODBhMzIgMzIgMCAwIDEtMzItMzJ2LTY0YTMyIDMyIDAgMCAxIDMyLTMyaDI4OGEzMiAzMiAwIDAgMSAzMiAzMnY2NGEzMiAzMiAwIDAgMS0zMiAzMmgtODB6IiBmaWxsPSIjNDQ0NDQ0IiBwLWlkPSIzMzE2Ij48L3BhdGg+PC9zdmc+'
 
@@ -898,6 +906,173 @@ function addBlocks (Blockly) {
             });
         }
     };
+
+     //颜色传感器初始化
+    Blockly.Blocks.qdp_ESP8266_yscgq = {
+        init: function () {
+            this.jsonInit({
+                message0: '%1',
+                message1: Blockly.Msg.qdp_ESP8266_yscgq,
+                args0: [
+                    {
+                        type: 'field_image',
+                        src: QH_yssb_ICO,
+                        width: 40,
+                        height: 40
+                    }
+                ],
+                args1: [
+                    {
+                        type: 'field_dropdown',
+                        name: 'PIN1',
+                        options: QH_yssb_delay
+                    },
+                    {
+                        type: 'field_dropdown',
+                        name: 'PIN2',
+                        options: QH_yssb_gain
+                    },
+                    {
+                        type: 'field_dropdown',
+                        name: 'PIN3',
+                        options: [[Blockly.Msg.QH_noPrint,"0"], [Blockly.Msg.QH_Print,"1"]]
+                    },
+                    {
+                        type: 'input_value',
+                        name: 'num1'
+                    }  
+                ],
+                "tooltip": "启用颜色识别的初始化必要块，通过打印值得到对应的参数，实际运行时关闭打印功能，否则会干扰别的串口或IIC模块输出冲突。",
+                colour: QH_Sensor_color,
+                extensions: ['shape_statement']
+            });
+        }
+    };
+
+    //颜色识别获取
+    Blockly.Blocks.qdp_yscgq2 = {
+        init: function () {
+            this.jsonInit({
+                message0: '%1',
+                message1: Blockly.Msg.qdp_yscgq2,
+                args0: [
+                    {
+                        type: 'field_image',
+                        src: QH_yssb_ICO,
+                        width: 40,
+                        height: 40
+                    }
+                ],
+                args1: [
+                    {
+                        type: 'field_dropdown',
+                        name: 'PIN',
+                        options: [["R", "r"],["G", "g"],["B", "b"],["C", "c"],["colorTemp", "colorTemp"],["lux", "lux"]]
+                    }
+                ],
+                "tooltip": "颜色传感器读取的对应值变量",
+                colour: QH_Sensor_color,
+                extensions: ['output_number']
+            });
+        }
+    };
+
+    //颜色对比
+    Blockly.Blocks.qdp_yscgq3 = {
+        init: function () {
+            this.jsonInit({
+                message0: '%1',
+                message1: Blockly.Msg.qdp_yscgq3,
+                args0: [
+                    {
+                        type: 'field_image',
+                        src: QH_yssb_ICO,
+                        width: 40,
+                        height: 40
+                    }
+                ],
+                args1: [
+                    {
+                        type: 'field_dropdown',
+                        name: 'PIN',
+                        options: [["R", "r"],["G", "g"],["B", "b"],["C", "c"],["colorTemp", "colorTemp"],["lux", "lux"]]
+                    },
+                    {
+                        type: 'input_value',
+                        name: 'num1'
+                    },  
+                    {
+                        type: 'input_value',
+                        name: 'num2'
+                    }  
+                ],
+                "tooltip": "颜色传感器的值的应用",
+                colour: QH_Sensor_color,
+                extensions: ['output_number']
+            });
+        }
+    };
+
+     //陀螺仪更新数据
+    Blockly.Blocks.QDP_ESP8266_MPU6050_update = {
+        init: function () {
+            this.jsonInit({
+                message0: '%1',
+                message1: Blockly.Msg.QDP_ESP8266_MPU6050_update,
+                args0: [
+                    {
+                        type: 'field_image',
+                        src: QH_MPU6050_ICO,
+                        width: 40,
+                        height: 40
+                    }
+                ],
+                args1: [
+                    
+                ],
+                "tooltip": "初始化陀螺仪,用在读取值前,只用一次即可",
+                colour: QH_Sensor_color,
+                extensions: ['shape_statement']
+            });
+        }
+    };
+
+    //MPU6050-获取数据
+    Blockly.Blocks.QDP_ESP8266_MPU6050_GETDATA = {
+        init: function () {
+            this.jsonInit({
+                message0: '%1',
+                message1: Blockly.Msg.QDP_ESP8266_MPU6050_GETDATA,
+                args0: [
+                    {
+                        type: 'field_image',
+                        src: QH_MPU6050_ICO,
+                        width: 40,
+                        height: 40
+                    }
+                ],
+                args1: [
+                    {
+                        type: 'field_dropdown',
+                        name: 'MPU6050_TYPE',
+                        options: [
+                                  [Blockly.Msg.QH_Accel_X, "mpu.getAccX()"],
+                                  [Blockly.Msg.QH_Accel_Y, "mpu.getAccY()"],
+                                  [Blockly.Msg.QH_Accel_Z, "mpu.getAccZ()"],
+                                  [Blockly.Msg.QH_Gyro_X, "mpu.getAccAngleX()"],
+                                  [Blockly.Msg.QH_Gyro_Y, "mpu.getAccAngleY()"],
+                                  [Blockly.Msg.QH_Gyro_Z, "mpu.getAngleZ()"],
+                                  [Blockly.Msg.QH_readTempC, "mpu.getTemp()"]
+                                  ]
+                    }
+                ],
+                "tooltip": "陀螺仪获取数据",
+                colour: QH_Sensor_color,
+                extensions: ['output_number']
+            });
+        }
+    };
+
 
     //high low
     Blockly.Blocks.qdp_inout_highlow = {

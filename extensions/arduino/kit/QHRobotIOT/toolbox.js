@@ -153,6 +153,30 @@ function addToolbox () {
             <shadow type="pins_digital2"></shadow>
         </value>
     </block>
+    <label text="%{BKY_QH_COLOR_LABEL}"></label>
+    <block type="qdp_ESP8266_yscgq">
+        <value name="num1">
+            <shadow type="math_number">
+                <field name="NUM">0x29</field>
+            </shadow>
+        </value>
+    </block>
+    <block type="qdp_yscgq2"></block>
+    <block type="qdp_yscgq3">
+        <value name="num1">
+            <shadow type="math_number">
+                <field name="NUM">0</field>
+            </shadow>
+        </value>
+        <value name="num2">
+            <shadow type="math_number">
+                <field name="NUM">10</field>
+            </shadow>
+        </value>
+    </block>
+    <label text="%{BKY_QH_MPU6050_LABEL}"></label>
+    <block type="QDP_ESP8266_MPU6050_update"></block>
+    <block type="QDP_ESP8266_MPU6050_GETDATA"></block>
 </category>
 <category name="%{BKY_QH_ACTUATOR_CATEGORY}" id="QH_ACTUATOR_CATEGORY" colour="#42CCFF" secondaryColour="#42CCFF" iconURI="${QH_Actuator_ICO}">
     <block type="qdp_inout_highlow"></block>

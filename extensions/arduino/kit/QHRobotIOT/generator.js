@@ -7767,6 +7767,62 @@ Blockly.Arduino.qdp_ESP8266_dht11 = function () {
   return [code, Blockly.Arduino.ORDER_ATOMIC];
 };
 
+//颜色传感器启用块
+Blockly.Arduino.qdp_ESP8266_yscgq = function() {
+ var dropdown_pin1 = this.getFieldValue('PIN1');
+ var dropdown_pin2 = this.getFieldValue('PIN2');
+ var dropdown_pin3 = this.getFieldValue('PIN3');
+ var num1 = Blockly.Arduino.valueToCode(this, 'num1',Blockly.Arduino.ORDER_ATOMIC) ||'0' ;
+ 
+Blockly.Arduino.definitions_['include_Wire'] = '#include <Wire.h>';
+Blockly.Arduino.definitions_['define_qdprscgq'] = '#include "Adafruit_TCS34725.h"';
+Blockly.Arduino.definitions_['var_declare_qdprobot_qdpyscgq'] = 'Adafruit_TCS34725 tcs = Adafruit_TCS34725(TCS34725_INTEGRATIONTIME_'+dropdown_pin1+'MS, TCS34725_GAIN_'+dropdown_pin2+'X);\n';
+var code = 'uint16_t r, g, b, c, colorTemp, lux;\ntcs.getRawData(&r, &g, &b, &c);\ncolorTemp = tcs.calculateColorTemperature_dn40(r, g, b, c);\nlux = tcs.calculateLux(r, g, b);\n';
+if(dropdown_pin3=='1')
+{
+Blockly.Arduino.setups_['setup_qdprobot_serial']= 'Serial.begin(9600);';
+Blockly.Arduino.setups_['yscgq_setup']='if (tcs.begin('+num1+')) {\nSerial.println("Found sensor");\n} else {\nSerial.println("No TCS34725 found ... check your connections");\nwhile (1);\n }\n';
+var code1 ='Serial.print("Color Temp: "); Serial.print(colorTemp, DEC); Serial.print(" K - ");\nSerial.print("Lux: "); Serial.print(lux, DEC); Serial.print(" - ");\nSerial.print("R: "); Serial.print(r, DEC); Serial.print(" ");\nSerial.print("G: "); Serial.print(g, DEC); Serial.print(" ");\nSerial.print("B: "); Serial.print(b, DEC); Serial.print(" ");\nSerial.print("C: "); Serial.print(c, DEC); Serial.print(" ");\nSerial.println(" ");\n';
+code = code +code1;
+}
+
+return code;
+
+};
+
+//颜色传感器的值读取
+ Blockly.Arduino.qdp_yscgq2 = function () {
+  var dropdown_pin1 = this.getFieldValue('PIN');
+   var code =''+dropdown_pin1+'';
+    return [code, Blockly.Arduino.ORDER_ATOMIC];
+};
+//颜色传感器值应用
+ Blockly.Arduino.qdp_yscgq3 = function () {
+  var dropdown_pin1 = this.getFieldValue('PIN');
+
+  var num1 = Blockly.Arduino.valueToCode(this, 'num1',Blockly.Arduino.ORDER_ATOMIC) ||'0' ;
+  var num2 = Blockly.Arduino.valueToCode(this, 'num2',Blockly.Arduino.ORDER_ATOMIC) ||'0' ;
+
+  var code =''+dropdown_pin1+' >= ('+num1+' - '+num2+') && '+dropdown_pin1+' <= ('+num1+' + '+num2+')';
+  return [code, Blockly.Arduino.ORDER_ATOMIC];
+};
+
+//传感器-MPU6050-更新数据
+Blockly.Arduino.QDP_ESP8266_MPU6050_update = function() {
+  Blockly.Arduino.definitions_['includeMPU6050_tockn'] = '#include <MPU6050_ESP8266.h>';
+  Blockly.Arduino.definitions_['var_declare_MPU6050'] = 'MPU6050_ESP8266 mpu;';
+  Blockly.Arduino.setups_['setup_mpu_begin'] = 'mpu.begin();';
+  var code = 'mpu.update();\n';
+  return code;
+};
+
+//传感器-MPU6050-获取数据
+Blockly.Arduino.QDP_ESP8266_MPU6050_GETDATA = function() {
+  var MPU6050_TYPE = this.getFieldValue('MPU6050_TYPE');
+  var code = MPU6050_TYPE;
+  return [code, Blockly.Arduino.ORDER_ATOMIC];
+};
+
 Blockly.Arduino.qdp_inout_highlow = function () {
     // Boolean values HIGH and LOW.
     var code = (this.getFieldValue('BOOL') == 'HIGH') ? 'HIGH' : 'LOW';
