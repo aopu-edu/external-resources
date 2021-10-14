@@ -8457,7 +8457,7 @@ function addGenerator (Blockly) {
         var num = Blockly.Arduino.valueToCode(this, 'text',Blockly.Arduino.ORDER_ATOMIC) ||'0' ;
         Blockly.Arduino.definitions_['define_qdport'] = '#include <QDPport.h>';
         if(dropdown_pin==5){
-        Blockly.Arduino.setups_['setup_qdprobot_serial']= 'Serial.begin(9600);';
+        Blockly.Arduino.setups_['setup_qdprobot_serial']= 'Serial.begin(115200);';
         var code = 'Serial.'+OutputModel+'('+num+');\n'; 
         }else{
         Blockly.Arduino.definitions_['define_SoftwareSerial'] = '#include <SoftwareSerial.h>';
@@ -8472,7 +8472,7 @@ function addGenerator (Blockly) {
         var dropdown_pin = this.getFieldValue('pin1');
         Blockly.Arduino.definitions_['define_qdport'] = '#include <QDPport.h>';
         if(dropdown_pin==5){
-        Blockly.Arduino.setups_['setup_qdprobot_serial']= 'Serial.begin(9600);';
+        Blockly.Arduino.setups_['setup_qdprobot_serial']= 'Serial.begin(115200);';
         var code = 'Serial.readString()'; 
         }else{
         Blockly.Arduino.definitions_['define_SoftwareSerial'] = '#include <SoftwareSerial.h>';
@@ -8487,7 +8487,7 @@ function addGenerator (Blockly) {
         var dropdown_pin = this.getFieldValue('pin1');
         Blockly.Arduino.definitions_['define_qdport'] = '#include <QDPport.h>';
         if(dropdown_pin==5){
-        Blockly.Arduino.setups_['setup_qdprobot_serial']= 'Serial.begin(9600);';
+        Blockly.Arduino.setups_['setup_qdprobot_serial']= 'Serial.begin(115200);';
         var code = 'Serial.available() > 0\n';
 
         }else{
