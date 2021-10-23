@@ -186,7 +186,7 @@ function addBlocks (Blockly) {
     ['.P2-L-34','P2L'],
     ['.P2-R-35','P2R'],
     ['.P3-L-21（SDA）','P3L'],
-    ['.P3-R-22（SCL）','P3L'],
+    ['.P3-R-22（SCL）','P3R'],
     ['.P4-L-16','P4L'],
     ['.P4-R-17（RGB）','P4R'],
     ['.P5-L-18','P5L'],
