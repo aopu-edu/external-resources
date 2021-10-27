@@ -1767,7 +1767,7 @@ function addBlocks (Blockly) {
                     {
                         type: 'field_dropdown',
                         name: 'PIN',
-                        options: qdprobotESP32_R2_PIN_Input_Dropdown
+                        options: qdprobotESP32_R_PIN_Output_Dropdown
                     },
                     {
                         type: 'field_dropdown',
@@ -1782,7 +1782,7 @@ function addBlocks (Blockly) {
         }
     };
 
-     //DH11温湿度
+     //颜色识别
     Blockly.Blocks.qdp_esp32_yscgq = {
         init: function () {
             this.jsonInit({
