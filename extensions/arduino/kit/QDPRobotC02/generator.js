@@ -8833,6 +8833,7 @@ Blockly.Arduino.qdp_esp32_chaoshengboSerial = function() {
     var dropdown_pin = this.getFieldValue('PIN');
     var dropdown_pin2 = this.getFieldValue('PIN2');
     var VALUE = Blockly.Arduino.valueToCode(this, 'VALUE',Blockly.Arduino.ORDER_ATOMIC) || '0';
+
     Blockly.Arduino.definitions_['define_QDPEsp32Port'] = '#include <QDPEsp32Port.h>';
     Blockly.Arduino.definitions_['include_SevenSegmentTM1637'] = '#include <SevenSegmentTM1637.h>';
     Blockly.Arduino.definitions_['var_declare_qdprobot_display'+dropdown_pin] = 'SevenSegmentTM1637  QDP7SegmentDisplay'+dropdown_pin+'(P'+dropdown_pin+'L,P'+dropdown_pin+'R);';

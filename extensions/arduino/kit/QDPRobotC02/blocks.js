@@ -3941,7 +3941,7 @@ function addBlocks (Blockly) {
         }
     };
 
-    //数管显示
+    //数码管显示
     Blockly.Blocks.qdp_esp32_display = {
         init: function () {
             this.jsonInit({
@@ -3971,7 +3971,7 @@ function addBlocks (Blockly) {
                         name: 'VALUE'
                     }       
                 ],
-                "tooltip": "显示数字与字母",
+                "tooltip": "显示整数与字母，整数时要定义一个变量放进去才能显示，字母时可以直接输入",
                 colour: QH_SMG_COLOR,
                 extensions: ['shape_statement']
             });
