@@ -1811,11 +1811,7 @@ function addBlocks (Blockly) {
                         type: 'field_dropdown',
                         name: 'PIN3',
                         options: [[Blockly.Msg.QH_noPrint,"0"], [Blockly.Msg.QH_Print,"1"]]
-                    },
-                    {
-                        type: 'input_value',
-                        name: 'num1'
-                    }  
+                    }
                 ],
                 "tooltip": "启用颜色识别的初始化必要块，通过打印值得到对应的参数，实际运行时关闭打印功能，否则会干扰别的串口或IIC模块输出冲突。",
                 colour: color_c02_serson,

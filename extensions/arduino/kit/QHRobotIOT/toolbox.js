@@ -154,13 +154,7 @@ function addToolbox () {
         </value>
     </block>
     <label text="%{BKY_QH_COLOR_LABEL}"></label>
-    <block type="qdp_ESP8266_yscgq">
-        <value name="num1">
-            <shadow type="math_number">
-                <field name="NUM">0x29</field>
-            </shadow>
-        </value>
-    </block>
+    <block type="qdp_ESP8266_yscgq"></block>
     <block type="qdp_yscgq2"></block>
     <block type="qdp_yscgq3">
         <value name="num1">

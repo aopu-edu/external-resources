@@ -45,13 +45,7 @@ function addToolbox () {
     <block type="QH_Soilmoisture" id="QH_Soilmoisture"></block>
     <block type="QH_dht11" id="QH_dht11"></block>
     <label text="%{BKY_QH_COLOR_LABEL}"></label>
-    <block type="QH_yssb_init">
-        <value name="num1">
-            <shadow type="math_number">
-                <field name="NUM">0x29</field>
-            </shadow>
-        </value>
-    </block>
+    <block type="QH_yssb_init"></block>
     <block type="QH_yssb_get" id="QH_yssb_get"></block>
     <block type="QH_yssb_compare">
         <value name="num1">
