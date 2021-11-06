@@ -2415,10 +2415,6 @@ function addBlocks (Blockly) {
                     {
                         type: 'input_value',
                         name: 'num1'
-                    },
-                    {
-                        type: 'input_value',
-                        name: 'time'
                     }
                 ],
                 "tooltip": "舵机,注意选择对应的舵机类型0~180度,不建议长时间运行！\n",

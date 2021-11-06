@@ -7645,9 +7645,14 @@ function addGenerator (Blockly) {
       var num2 = Blockly.Arduino.valueToCode(this, 'QDP_display_samll_dc_X',Blockly.Arduino.ORDER_ATOMIC) ||'0' ;
       var num3 = Blockly.Arduino.valueToCode(this, 'QDP_display_samll_dc_Y',Blockly.Arduino.ORDER_ATOMIC) ||'0' ;
       var num4 = Blockly.Arduino.valueToCode(this, 'QDP_display_samll_dc_text',Blockly.Arduino.ORDER_ATOMIC) ||'0' ;
-      // num4 = num4.replace(/\"/g,'');
+      num4 = num4.replace(/\"/g,'')
+      var number = Math.ceil(Math.random() * 100000);  
+      //编码解析
+      num4 = utf8ToGb2312Array(num4);
 
-      var code = 'myHardwareSerial'+Serial+'.print(String("DC'+dropdown_pin3+'(")+String('+num2+')+String(",")+String('+num3+')+String(",")+String('+num4+')+String(",")+String('+num1+')+String(");"));\n';
+      Blockly.Arduino.definitions_['var_declare_'+number] = 'const uint8_t Str_'+number+'[] = {'+num4+'};';//定义数组
+
+      var code = 'myHardwareSerial'+Serial+'.print(String("DC'+dropdown_pin3+'(")+String('+num2+')+String(",")+String('+num3+')+String(","));\nmyHardwareSerial'+Serial+'.write(Str_'+number+',sizeof(Str_'+number+'));\nmyHardwareSerial'+Serial+'.print(String(",")+String('+num1+')+String(");"));\n';
 
       return code;
      };
@@ -7717,9 +7722,14 @@ function addGenerator (Blockly) {
       var num3 = Blockly.Arduino.valueToCode(this, 'QDP_display_samll_sbcdc_Y',Blockly.Arduino.ORDER_ATOMIC) ||'0' ;
       var num4 = Blockly.Arduino.valueToCode(this, 'QDP_display_samll_sbcdc_text',Blockly.Arduino.ORDER_ATOMIC) ||'0' ;
       var num5 = Blockly.Arduino.valueToCode(this, 'QDP_display_samll_sbcdc_colou2',Blockly.Arduino.ORDER_ATOMIC) ||'0' ;
+      num4 = num4.replace(/\"/g,'')
+      //编码解析
+      num4 = utf8ToGb2312Array(num4);
+      var number = Math.ceil(Math.random() * 100000);  
       
+      Blockly.Arduino.definitions_['var_declare_'+number] = 'const uint8_t Str_'+number+'[] = {'+num4+'};';//定义数组
       
-      var code = 'myHardwareSerial'+Serial+'.print(String("SBC('+num5+');DCV'+dropdown_pin3+'(")+String('+num2+')+String(",")+String('+num3+')+String(",")+String('+num4+')+String(",")+String('+num1+')+String(");"));\n';
+      var code = 'myHardwareSerial'+Serial+'.print(String("SBC('+num5+');DCV'+dropdown_pin3+'(")+String('+num2+')+String(",")+String('+num3+')+String(","));\nmyHardwareSerial'+Serial+'.write(Str_'+number+',sizeof(Str_'+number+'));\nmyHardwareSerial'+Serial+'.print(String(",")+String('+num1+')+String(");"));\n';
 
       return code;
      };
@@ -8184,14 +8194,13 @@ Blockly.Arduino.qdp_esp32_chaoshengboSerial = function() {
   //舵机
   Blockly.Arduino.qdp_esp32_servomotor2 = function() {
     var dropdown_pin = this.getFieldValue('pin');
-    var time = Blockly.Arduino.valueToCode(this, 'time',Blockly.Arduino.ORDER_ATOMIC) || '0';
     var num1 = Blockly.Arduino.valueToCode(this, 'num1',Blockly.Arduino.ORDER_ATOMIC) || '0';
     Blockly.Arduino.definitions_['define_QDPEsp32Port'] = '#include <QDPEsp32Port.h>';
     Blockly.Arduino.definitions_['define_ESP32_Servo'] = '#include <ESP32_Servo.h>';
    
     Blockly.Arduino.definitions_['var_declare_qdprobot_motor31'+dropdown_pin] = 'Servo QDPservo_'+dropdown_pin+';\n';
     Blockly.Arduino.setups_['setup_output_3'+dropdown_pin] ='QDPservo_'+dropdown_pin+'.attach('+dropdown_pin+',500,2500);\n';
-      var code = 'QDPservo_'+dropdown_pin+'.write('+num1+');\ndelay('+time+');\n';
+      var code = 'QDPservo_'+dropdown_pin+'.write('+num1+');\n';
      return code;
   };
 

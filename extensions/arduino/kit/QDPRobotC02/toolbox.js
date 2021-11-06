@@ -419,11 +419,6 @@ function addToolbox () {
                 <field name="NUM">0</field>
             </shadow>
         </value>
-        <value name="time">
-            <shadow type="math_number">
-                <field name="NUM">0</field>
-            </shadow>
-        </value>
     </block>
     <block type="qdp_esp32_servomotorread"></block>
 </category>

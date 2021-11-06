@@ -1,7 +1,7 @@
 module.exports = [
     // Buid-in device
     'QDPRobot_arduinoUnoUltra',
-    'QDPRobotC02_arduinoEsp32',
+    'QDPRobotC02_arduinoESP32QDP',
     'QDPRobotIOT_arduinoEsp8266',
     'arduinoUno',
     'arduinoNano',
