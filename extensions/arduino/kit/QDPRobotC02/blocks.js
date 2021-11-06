@@ -1507,14 +1507,14 @@ function addBlocks (Blockly) {
                                 [(Blockly.Msg.MIXLY_QDP_BUTTONTripleLongClick),"5"]]
                     }             
                 ],
-                "tooltip": "与按钮功能相同，只是启动这个功能后按法不一样，\n使用前要加 启用多功能按钮 块",
+                "tooltip": "与按钮功能相同，只是启动这个功能后按法不一样，\n使用前要加启用多功能按钮块",
                 colour: color_c02_serson,
                 extensions: ['output_boolean']
             });
         }
     };
 
-    //多功能钮
+    //超声波
     Blockly.Blocks.qdp_esp32_chaoshengbo = {
         init: function () {
             this.jsonInit({
@@ -1540,7 +1540,7 @@ function addBlocks (Blockly) {
                         options:qdprobotESP32_UNIT
                     }             
                 ],
-                "tooltip": "与按钮功能相同，只是启动这个功能后按法不一样，\n使用前要加 启用多功能按钮 块",
+                "tooltip": "超声波测距，注意单位的选择，\n使用时如果波动大请注意检查程序或放宽取值区间",
                 colour: color_c02_serson,
                 extensions: ['output_number']
             });
