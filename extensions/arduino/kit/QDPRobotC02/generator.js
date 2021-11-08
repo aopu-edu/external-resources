@@ -7645,14 +7645,30 @@ function addGenerator (Blockly) {
       var num2 = Blockly.Arduino.valueToCode(this, 'QDP_display_samll_dc_X',Blockly.Arduino.ORDER_ATOMIC) ||'0' ;
       var num3 = Blockly.Arduino.valueToCode(this, 'QDP_display_samll_dc_Y',Blockly.Arduino.ORDER_ATOMIC) ||'0' ;
       var num4 = Blockly.Arduino.valueToCode(this, 'QDP_display_samll_dc_text',Blockly.Arduino.ORDER_ATOMIC) ||'0' ;
-      num4 = num4.replace(/\"/g,'')
-      var number = Math.ceil(Math.random() * 100000);  
-      //编码解析
-      num4 = utf8ToGb2312Array(num4);
+      Blockly.Arduino.definitions_['include_QDP_text_code'] = '#include "QDP_text_code.h"';
+      Blockly.Arduino.definitions_['var_QDP_text_code'] = 'QDP_text_code Transform;';
 
-      Blockly.Arduino.definitions_['var_declare_'+number] = 'const uint8_t Str_'+number+'[] = {'+num4+'};';//定义数组
+      Blockly.Arduino.definitions_['function_transform_'+Serial] = 'void transform_'+Serial+'(String input_data)'
+                                                         +'\n{'
+                                                         +'\n  int input_num = input_data.length();'
+                                                         +'\n  int output_num = 0;'
+                                                         +'\n  unsigned char str[input_num];'
+                                                         +'\n  byte select = 0;'
+                                                         +'\n  for(int x = 0;x < input_num;x++)'
+                                                         +'\n  {'
+                                                         +'\n    str[x] = input_data.charAt(x);'
+                                                         +'\n    select = Transform.GetUtf8ByteNumForWord(str[x]);'
+                                                         +'\n    if(select == 0)'
+                                                         +'\n      output_num++;'
+                                                         +'\n    else if(select >= 2)'
+                                                         +'\n      output_num+=2;'
+                                                         +'\n  }'
+                                                         +'\n  uint8_t gbArray[output_num];'
+                                                         +'\n  Transform.Utf8ToGb2312(str,input_num,gbArray);'
+                                                         +'\n  myHardwareSerial'+Serial+'.write(gbArray,sizeof(gbArray));'
+                                                         +'\n}';
 
-      var code = 'myHardwareSerial'+Serial+'.print(String("DC'+dropdown_pin3+'(")+String('+num2+')+String(",")+String('+num3+')+String(","));\nmyHardwareSerial'+Serial+'.write(Str_'+number+',sizeof(Str_'+number+'));\nmyHardwareSerial'+Serial+'.print(String(",")+String('+num1+')+String(");"));\n';
+      var code = 'myHardwareSerial'+Serial+'.print(String("DC'+dropdown_pin3+'(")+String('+num2+')+String(",")+String('+num3+')+String(","));\ntransform_'+Serial+'(String('+num4+'));\nmyHardwareSerial'+Serial+'.print(String(",")+String('+num1+')+String(");"));\n';
 
       return code;
      };
@@ -7722,14 +7738,30 @@ function addGenerator (Blockly) {
       var num3 = Blockly.Arduino.valueToCode(this, 'QDP_display_samll_sbcdc_Y',Blockly.Arduino.ORDER_ATOMIC) ||'0' ;
       var num4 = Blockly.Arduino.valueToCode(this, 'QDP_display_samll_sbcdc_text',Blockly.Arduino.ORDER_ATOMIC) ||'0' ;
       var num5 = Blockly.Arduino.valueToCode(this, 'QDP_display_samll_sbcdc_colou2',Blockly.Arduino.ORDER_ATOMIC) ||'0' ;
-      num4 = num4.replace(/\"/g,'')
-      //编码解析
-      num4 = utf8ToGb2312Array(num4);
-      var number = Math.ceil(Math.random() * 100000);  
-      
-      Blockly.Arduino.definitions_['var_declare_'+number] = 'const uint8_t Str_'+number+'[] = {'+num4+'};';//定义数组
-      
-      var code = 'myHardwareSerial'+Serial+'.print(String("SBC('+num5+');DCV'+dropdown_pin3+'(")+String('+num2+')+String(",")+String('+num3+')+String(","));\nmyHardwareSerial'+Serial+'.write(Str_'+number+',sizeof(Str_'+number+'));\nmyHardwareSerial'+Serial+'.print(String(",")+String('+num1+')+String(");"));\n';
+      Blockly.Arduino.definitions_['include_QDP_text_code'] = '#include "QDP_text_code.h"';
+      Blockly.Arduino.definitions_['var_QDP_text_code'] = 'QDP_text_code Transform;';
+
+      Blockly.Arduino.definitions_['function_transform_'+Serial] = 'void transform_'+Serial+'(String input_data)'
+                                                         +'\n{'
+                                                         +'\n  int input_num = input_data.length();'
+                                                         +'\n  int output_num = 0;'
+                                                         +'\n  unsigned char str[input_num];'
+                                                         +'\n  byte select = 0;'
+                                                         +'\n  for(int x = 0;x < input_num;x++)'
+                                                         +'\n  {'
+                                                         +'\n    str[x] = input_data.charAt(x);'
+                                                         +'\n    select = Transform.GetUtf8ByteNumForWord(str[x]);'
+                                                         +'\n    if(select == 0)'
+                                                         +'\n      output_num++;'
+                                                         +'\n    else if(select >= 2)'
+                                                         +'\n      output_num+=2;'
+                                                         +'\n  }'
+                                                         +'\n  uint8_t gbArray[output_num];'
+                                                         +'\n  Transform.Utf8ToGb2312(str,input_num,gbArray);'
+                                                         +'\n  myHardwareSerial'+Serial+'.write(gbArray,sizeof(gbArray));'
+                                                         +'\n}';
+
+      var code = 'myHardwareSerial'+Serial+'.print(String("SBC('+num5+');DCV'+dropdown_pin3+'(")+String('+num2+')+String(",")+String('+num3+')+String(","));\ntransform_'+Serial+'(String('+num4+'));\nmyHardwareSerial'+Serial+'.print(String(",")+String('+num1+')+String(");"));\n';
 
       return code;
      };
