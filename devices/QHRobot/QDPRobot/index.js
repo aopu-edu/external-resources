@@ -2,7 +2,7 @@ const QDPRobot = formatMessage => ({
     name: 'QDPRobot UNO',
     deviceId: 'QDPRobot_arduinoUnoUltra',
     manufactor: 'QDPRobot',
-    leanMore: 'https://qdprobot.taobao.com',
+    learnMore: 'https://qdprobot.taobao.com',
     iconURL: 'asset/QDPRobot.png',
     description: formatMessage({
         id: 'QDPRobot.description',

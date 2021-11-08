@@ -2,7 +2,7 @@ const QDPRobotIOT = formatMessage => ({
     name: 'QDPRobot ESP8266',
     deviceId: 'QDPRobotIOT_arduinoEsp8266',
     manufactor: 'QDPRobot',
-    leanMore: 'https://qdprobot.taobao.com',
+    learnMore: 'https://qdprobot.taobao.com',
     iconURL: 'asset/IOTstart8266.png',
     description: formatMessage({
         id: 'QDPRobotIOT.description',
