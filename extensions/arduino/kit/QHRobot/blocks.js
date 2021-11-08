@@ -2,23 +2,24 @@
 /* eslint-disable max-len */
 /* eslint-disable require-jsdoc */
 function addBlocks (Blockly) {
-    const QH_Sensor_color = '#27b6ac';
+    const QH_Sensor_color = '#E06C78';
     const QH_Sensor_color2 = '#a5675b';
-    const QH_Actuator_color = '#AE8F00';
-    const QH_SPEECH_color1 = '#ae8f00';
+    const QH_Actuator_color = '#5874DC';
+    const QH_SPEECH_color1 = '#165ca8';
     const QH_SPEECH_color2 = '#5ba5a5';
     const QH_SPEECH_color3 = '#a5675b';
     const QH_SPEECH_color4 = '#e386a1';
     const QH_COMMUNICATE_color1 = '#6c91ac';
     const QH_COMMUNICATE_color2 = '#27b6ac';
     const QH_COMMUNICATE_color3 = '#5b5b5b';
+    const QH_COMMUNICATE_color4 = '#00a6ac';
     const QH_MP3_color = '#b766ad';
-    const QH_SMG_COLOR = '#ae8f00';
-    const QH_OLED_COLOR = '#e36a69';
-    const QH_SDISPLAY_COLOR = '#a5855b';
-    const QH_LCD_COLOR = '#5ba5a5';
-    const QH_ZKP_COLOR = '#6495ed';
-    const QH_OTHER_COLOR = '#808080';
+    const QH_SMG_COLOR = '#22c32e';
+    const QH_OLED_COLOR = '#129f65';
+    const QH_SDISPLAY_COLOR = '#FA9284';
+    const QH_LCD_COLOR = '#ea928a';
+    const QH_ZKP_COLOR = '#9a6665';
+    const QH_OTHER_COLOR = '#cbc668';
 
 
     const QH_yssb_delay = [["700", "700"],["2.4", "2_4"],["24", "24"],["50", "50"],["101", "101"],["154", "154"]];
