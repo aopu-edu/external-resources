@@ -397,8 +397,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "常开按钮开关，按下为输入，\n注意左按钮在P7/8时无效",
                 colour: QH_Sensor_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_boolean']
             });
         }
@@ -426,8 +425,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "常开按钮开关，按下为输入，\n按左或右相同效果",
                 colour: QH_Sensor_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_boolean']
             });
         }
@@ -455,8 +453,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "开启钮的多功能，必须在使用“多功能按钮”前先使用此块定义，\n相当于多功能的开关",
                 colour: QH_Sensor_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -504,8 +501,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "与按钮功能相同，只是启动这个功能后按法不一样，\n使用前要加“启用多功能按钮“块",
                 colour: QH_Sensor_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_boolean']
             });
         }
@@ -538,8 +534,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "超声波测距，注意单位的选择，\n使用时如果波动大请注意检查程序或放宽取值区间",
                 colour: QH_Sensor_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_number']
             });
         }
@@ -561,8 +556,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "超声波测距(I2C模式)，返回单位为mm,传感器盲区2CM\n拨码开关状态:IIC=ON,UART=OFF  切换模式后要断电重启模块！",
                 colour: QH_Sensor_color2,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_number']
             });
         }
@@ -594,8 +588,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "超声波测距(串口模式/IO模式)，返回单位为mm,传感器盲区2CM\n串口模式拨码开关状态:IIC=OFF,UART=ON\nIO模式拨码开关状态:IIC=OFF,UART=OFF 切换模式后要断电重启模块！",
                 colour: QH_Sensor_color2,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_number']
             });
         }
@@ -633,8 +626,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "左右感应器对白色物体约2CM时有输入(亮灯),\n相反对黑色物体不作反应，通常用来区分白黑",
                 colour: QH_Sensor_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_boolean']
             });
         }
@@ -662,8 +654,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "对光线强弱的感应，返回对应的模拟数值，\n亮数值变大，暗数值变小",
                 colour: QH_Sensor_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_number']
             });
         }
@@ -691,8 +682,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "对声音大小的感应，返回对应的模拟数值，\n周边噪声大值变大，相反变小",
                 colour: QH_Sensor_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_number']
             });
         }
@@ -728,8 +718,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "读取电位器的模拟阻值",
                 colour: QH_Sensor_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_number']
             });
         }
@@ -757,8 +746,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "摇杆初始化",
                 colour: QH_Sensor_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -786,8 +774,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "获取摇杆的值",
                 colour: QH_Sensor_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_number']
             });
         }
@@ -815,8 +802,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "土壤湿度传感器的模拟数值",
                 colour: QH_Sensor_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_number']
             });
         }
@@ -849,8 +835,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "读取传感器的摄氏温度值及相对湿度",
                 colour: QH_Sensor_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_number']
             });
         }
@@ -888,8 +873,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "启用颜色识别的初始化必要块，通过打印值得到对应的参数，实际运行时关闭打印功能，否则会干扰别的串口或IIC模块输出冲突。",
                 colour: QH_Sensor_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -917,8 +901,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "颜色传感器读取的对应值变量",
                 colour: QH_Sensor_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_number']
             });
         }
@@ -954,8 +937,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "颜色传感器的值的应用",
                 colour: QH_Sensor_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_number']
             });
         }
@@ -979,8 +961,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "初始化陀螺仪,用在读取值前,只用一次即可",
                 colour: QH_Sensor_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -1004,8 +985,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "校准偏航角",
                 colour: QH_Sensor_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -1044,8 +1024,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "陀螺仪获取数据",
                 colour: QH_Sensor_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_number']
             });
         }
@@ -1069,8 +1048,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "陀螺仪动作检测更新数据",
                 colour: QH_Sensor_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -1107,8 +1085,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "陀螺仪动作检测获取数据",
                 colour: QH_Sensor_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_boolean']
             });
         }
@@ -1130,8 +1107,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "状态选单 高/低",
                 colour: QH_Actuator_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_boolean']
             });
         }
@@ -1171,8 +1147,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "开启LED灯",
                 colour: QH_Actuator_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -1208,8 +1183,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "读取LED灯状态",
                 colour: QH_Actuator_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_boolean']
             });
         }
@@ -1249,8 +1223,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "LED灯亮度调节",
                 colour: QH_Actuator_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -1290,8 +1263,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "继电器输出",
                 colour: QH_Actuator_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -1327,8 +1299,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "读取继电器状态",
                 colour: QH_Actuator_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_boolean']
             });
         }
@@ -1376,8 +1347,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "RGB对应灯号颜色的值，灯号共4个，总灯数跟模块灯数相同，0为全部同时工作\n对应的值是代表第几个灯的，最大255，0为关",
                 colour: QH_Actuator_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -1418,8 +1388,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "RGB对应灯号颜色的值，灯号共4个，总灯数跟模块灯数相同，0为全部同时工作\n对应的值是代表第几个灯的，最大255，0为关",
                 colour: QH_Actuator_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -1457,8 +1426,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "蜂鸣器的发音设置，频率不同时发音不一样，时间为发音的持续时间",
                 colour: QH_Actuator_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -1491,8 +1459,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "对应播放系统内音乐，直到自动播完",
                 colour: QH_Actuator_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -1524,8 +1491,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "5~8V直流电机在M1-M2口上的控制，旋转速度通过0~255来控制，\n负数为反转，0为停止，工作时间通过延时指令来控制\n当电机受外部机构卡死时，会内部保护停机，这时重启电源即可\n 一定要开启电源开关，不然电机不转.",
                 colour: QH_Actuator_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -1575,8 +1541,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": '编码电机状态在M1-M2上，此时P2-P3不要接双脚位控制或双反馈的传感器及执行器(按软件指示接)\n"中断"是指在运行时可否会接着走下一指令还是等这一指令走完再走下一指令，"脉冲数"是指转动总的信号个数\n如:一圈给200个信号，那么输入200就是指转一圈,使用时多测试这个值，"减速脉冲数"是指最后指定一些脉冲可以用来执行另一个速度,\n当电机受外部机构卡死时，会内部保护停机，这时重启电源即可\n 一定要开启电源开关，不然电机不转.',
                 colour: QH_Actuator_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -1609,8 +1574,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": '编码电机的当前状态，当在运行时值为1，运行完成时为0',
                 colour: QH_Actuator_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_boolean']
             });
         }
@@ -1647,8 +1611,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "舵机,注意选择对应的舵机类型0~360度,不建议长时间运行！\n",
                 colour: QH_Actuator_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -1689,8 +1652,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "舵机,注意选择对应的舵机类型0~180度,不建议长时间运行！\n",
                 colour: QH_Actuator_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -1718,8 +1680,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "舵机,注意选择对应的舵机类型0~180度,不建议长时间运行！\n",
                 colour: QH_Actuator_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_number']
             });
         }
@@ -1755,8 +1716,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "舵机板类型0~180度舵机参数初始块，默认值为180度用，用户可以进行微调\n",
                 colour: QH_Actuator_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -1792,8 +1752,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "舵机板I2C接口地址,一个板可以接16个舵机,编号0~15,可以并联16个板,外接电源5~6V,当角度设置为负的时候为停止.注意选择对应的舵机类型0~180度,使用前要放一个180参数设置块初始化\n",
                 colour: QH_Actuator_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -1841,8 +1800,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "舵机板类型0~36度舵机参数初始块，默认值为360度用，用户可以进行微调\n",
                 colour: QH_Actuator_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -1883,8 +1841,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "舵机板I2C接口地址,一个板可以接16个舵机,号0~15,速度为0的时候为停止.可以并联16个板,外接电源5~6V,注意选择对应的舵机类型0~360度,不建议长时间运行！使用前要放一个360度参数设置块初始化\n",
                 colour: QH_Actuator_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -1921,8 +1878,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "适用于QH-ASR语音合成模块",
                 colour: QH_SPEECH_color1,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -1954,8 +1910,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "适用于QH-ASR语音合成模块，用于播放数字(整数、浮点)变量和常量，播放时会产生阻塞。",
                 colour: QH_SPEECH_color1,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -1988,8 +1943,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "发送指令控制语音模块相关IO动作，输出高电平5V",
                 colour: QH_SPEECH_color2,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -2017,8 +1971,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "初始化定义模块端口,模块唤醒词：小齐小齐、小护小护、你好齐护、齐护机器人、齐护齐护，并亮起识别状态灯,\n其中识别词：音量增大/提高音量/增大音量/加大音量/减小音量/音量减小/最大音量/最小音量 为模块内部音量控制，不带输出。",
                 colour: QH_SPEECH_color2,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -2051,8 +2004,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "当接收到对应的语音指令时",
                 colour: QH_SPEECH_color2,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_boolean']
             });
         }
@@ -2108,8 +2060,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                            +'“等待完成“是指在合成发音完后才执行下一指令，否则是同时执行下一指令，注意其它参数及发音人的选择\n'
                            +'此为串口运行设备，如多串口设备运行，运行前要加“软串口定义到”块指令进行切换串口',
                 colour: QH_SPEECH_color3,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -2163,8 +2114,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "只支持英文和变量",
                 colour: QH_SPEECH_color3,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -2201,8 +2151,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "此为串口运行设备,合成模块中发出指定的提示音,注:编号一定要为两位的数值,个位数时要加0\n可以用“停止合成”块终止它",
                 colour: QH_SPEECH_color3,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -2232,8 +2181,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                                   +'请用套件中提供的软件按要求设定，可以直接输入中英文，拼音，标点可以使读音间断，\n'
                                   +'在“语音结果”块的前面使用并在同一运行块内\n“说出结果“是指说出识别到的语句',
                 colour: QH_SPEECH_color3,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -2268,8 +2216,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                                   +'请用套件中提供的软件按要求设定，可以直接输入中英文，拼音，标点可以使读音间断，\n'
                                   +'在“语音结果”块的前面使用并在同一运行块内\n“说出结果“是指说出识别到的语句',
                 colour: QH_SPEECH_color4,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -2301,8 +2248,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "请输入模块预设(烧录)的相关词组,如果非二次开发必须采用出厂词组相同，当识别到相同的结果时执行，在“开启语音识别”块的后面使用并在同一运行块内",
                 colour: QH_SPEECH_color4,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_boolean']
             });
         }
@@ -2335,8 +2281,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "请选择模块出厂设置的词组,当识别到相同的结果时执行，在“开启语音识别”块的后面使用并在同一运行块内",
                 colour: QH_SPEECH_color4,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_boolean']
             });
         }
@@ -2376,8 +2321,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "对应摇控器的按键输入，注：红外遥控器的“发送” “接收”在一个程序内不能同时使用，只能二选一！",
                 colour: QH_COMMUNICATE_color1,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_boolean']
             });
         }
@@ -2413,8 +2357,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "发送指定类型的红外数据，注：红外遥控器的“发送” “接收”在一个程序内不能同时使用，只能二选一！",
                 colour: QH_COMMUNICATE_color1,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -2454,8 +2397,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "将读取到的红外数组放入这里发送，注意数组长度要对应长度，不同数组时要改变编号！",
                 colour: QH_COMMUNICATE_color1,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -2479,8 +2421,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "P5接口 放在循环内，上传程序时不要插模块 蓝牙APP上的滑动变量对应值,在“蓝牙变量”和“蓝牙按键”前使用",
                 colour: QH_COMMUNICATE_color2,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -2508,8 +2449,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "P5接口 上传程序时不要插模块 接收到蓝牙模块在对应APP输入的按键设定字符值（APP发送格式为“,发送的字符.”）,\n在“启用蓝牙接收”后有效",
                 colour: QH_COMMUNICATE_color2,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_boolean']
             });
         }
@@ -2537,8 +2477,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "P5接口 上传程序时不要插模块 蓝牙APP上的滑动变量对应值,在“启用蓝牙接收”后有效",
                 colour: QH_COMMUNICATE_color2,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_number']
             });
         }
@@ -2581,8 +2520,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "P5接口 上传程序时不要插模块 蓝牙APP V1~V5 显示变量对应值,可以为传感器值或字符串，注：重复发送要加延时间隔约30毫秒！",
                 colour: QH_COMMUNICATE_color2,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -2611,8 +2549,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 "tooltip": '当多串口使用时，控制器只能同时让一个串口工作，通过此块来转换软串口，在转换软串口设备前要用此块\n'
                                    +'只有一个串口设备时或不需要转换当前工作串口时不需要加此块',
                 colour: QH_COMMUNICATE_color3,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -2644,8 +2581,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "此为串口运行,直接将读到的值和设定值对比,相同时为真,可用于蓝牙等模块的通讯回读",
                 colour: QH_COMMUNICATE_color1,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_boolean']
             });
         }
@@ -2682,8 +2618,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "指定串口发送数值，如多串口设备运行，运行前要加“软串口定义到”块指令进行切换串口",
                 colour: QH_COMMUNICATE_color1,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -2711,8 +2646,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "当串口有数据读时读取的值",
                 colour: QH_COMMUNICATE_color1,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_number']
             });
         }
@@ -2740,8 +2674,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "如果多串口设备使用先要“软串口定义到”，这个要配合后面“串口接收”一起使用，这个意思是当串口有可读数值时",
                 colour: QH_COMMUNICATE_color1,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_boolean']
             });
         }
@@ -2777,8 +2710,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "播放顺序为复制到内存卡里的时间为先后排序,注:复制时按时间排序，然后对着第一个时间点右键复制到内存卡，此时会按时间排序！",
                 colour: QH_MP3_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -2810,8 +2742,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "MP3音量",
                 colour: QH_MP3_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -2847,8 +2778,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "MP3重复播放",
                 colour: QH_MP3_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -2881,8 +2811,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "MP3播放暂停",
                 colour: QH_MP3_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -2915,8 +2844,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "MP3上一首/下一首",
                 colour: QH_MP3_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -2953,8 +2881,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "MP3播放音效",
                 colour: QH_MP3_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -2981,8 +2908,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "使用批处理命令获取SD卡文件目录",
                 colour: QH_MP3_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -3023,8 +2949,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "指定文件名播放音频",
                 colour: QH_MP3_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -3061,8 +2986,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "只能显示数字，选择auto时自动小数点，如果显示时钟时请选2位小数，其它数值如果选择了对应的小数位就一定要对应的小数位值，否则请选择auto自动",
                 colour: QH_SMG_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -3090,8 +3014,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "关闭数码管",
                 colour: QH_SMG_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -3286,8 +3209,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "取模工具设置部分",
                 colour: QH_OLED_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_number']
             });
         }
@@ -3355,8 +3277,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "OLED清屏",
                 colour: QH_OLED_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -3387,8 +3308,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "OLED背光亮度",
                 colour: QH_OLED_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -3456,8 +3376,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "OLED显示内置图片",
                 colour: QH_OLED_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -3492,8 +3411,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "显示-OLED-画点",
                 colour: QH_OLED_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -3536,8 +3454,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "显示-OLED-画线",
                 colour: QH_OLED_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -3581,8 +3498,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "显示-OLED-画直线",
                 colour: QH_OLED_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -3630,8 +3546,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "显示-OLED-画矩形",
                 colour: QH_OLED_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -3683,8 +3598,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "显示-OLED-画圆角矩形",
                 colour: QH_OLED_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -3733,8 +3647,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "显示-OLED-画圆（空心，实心）",
                 colour: QH_OLED_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -3787,8 +3700,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "显示-OLED-画椭圆（空心，实心）",
                 colour: QH_OLED_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -3840,8 +3752,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "显示-OLED-画三角",
                 colour: QH_OLED_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -3899,8 +3810,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "横坚屏设置",
                 colour: QH_SDISPLAY_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -3932,8 +3842,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "屏亮度设置",
                 colour: QH_SDISPLAY_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -3970,8 +3879,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "颜色刷屏或背景颜色设置",
                 colour: QH_SDISPLAY_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -4027,8 +3935,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "默认图片显示",
                 colour: QH_SDISPLAY_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -4081,8 +3988,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "图片显示",
                 colour: QH_SDISPLAY_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -4122,8 +4028,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "画点指令",
                 colour: QH_SDISPLAY_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -4176,8 +4081,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "画线框指令",
                 colour: QH_SDISPLAY_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -4226,8 +4130,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "画圆指令",
                 colour: QH_SDISPLAY_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -4276,8 +4179,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "显示文本",
                 colour: QH_SDISPLAY_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -4326,8 +4228,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "显示中文",
                 colour: QH_SDISPLAY_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -4380,8 +4281,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "显示带底色文本",
                 colour: QH_SDISPLAY_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -4413,8 +4313,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "自定义指令",
                 colour: QH_SDISPLAY_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -4447,8 +4346,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "设置屏的通讯波特率，注：非P5时只能用9600（出厂值），每次更改后要关电重启，不建议更改！",
                 colour: QH_SDISPLAY_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -4497,8 +4395,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 "tooltip": "LCD初始化",
                 "inputsInline": false,
                 colour:QH_LCD_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
             this.setFieldValue("SCL", "SCL");
@@ -4538,8 +4435,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "LCD打印",
                 colour:QH_LCD_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -4578,8 +4474,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "LCD打印2",
                 colour:QH_LCD_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -4611,8 +4506,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "LCD初始化",
                 colour:QH_LCD_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -4632,8 +4526,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "P5接口 上传程序时不要插模块 屏上的滑动变量对应值,在“屏按键”和“屏滑动变量”前使用",
                 colour:QH_ZKP_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -4660,8 +4553,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "P5接口 上传程序时不要插模块 接收到屏上对应输入的按键设定字符值（屏发送格式为“,发送的字符.”）,\n在“启用屏接收数据”后有效",
                 colour:QH_ZKP_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_boolean']
             });
         }
@@ -4689,8 +4581,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "P5接口 上传程序时不要插模块 屏上的滑动变量对应值,在“启用屏接收数据”后有效",
                 colour:QH_ZKP_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_number']
             });
         }
@@ -4722,8 +4613,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "P5接口 上传程序时不要插模块 屏上V1~V5显示变量对应值,可以为传感器值或字符串，注：重复发送要加延时间隔约300毫秒！",
                 colour:QH_ZKP_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -4751,8 +4641,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "进入睡眠后屏关闭,退出睡眠自动开启屏显.",
                 colour:QH_ZKP_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -4786,8 +4675,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "屏蜂鸣器的发音频率及音量大小",
                 colour:QH_ZKP_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -4815,8 +4703,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "常用颜色的选择",
                 colour:QH_ZKP_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_number']
             });
         }
@@ -4843,8 +4730,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "全屏显示一个颜色（十进制颜色号）或采用颜色定义块",
                 colour:QH_ZKP_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -4872,8 +4758,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "内存图片全屏显示",
                 colour:QH_ZKP_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -4901,8 +4786,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "跳转的指定的页面",
                 colour:QH_ZKP_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -4946,8 +4830,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "画圆工具，在屏上显示，设置中心点(X最大320,Y最大240)及半径颜色，可选择实心或空心",
                 colour:QH_ZKP_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -4995,8 +4878,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "画图工具，设置起点和终点/对角坐标的坐标值(X最大320,Y最大240)",
                 colour:QH_ZKP_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -5052,8 +4934,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "在屏幕上指定的区域显示文字，XY为起始点，WH是区域的长和高",
                 colour:QH_ZKP_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -5109,8 +4990,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "在屏幕上指定的区域显示文字，XY为起始点，WH是区域的长和高",
                 colour:QH_ZKP_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -5137,8 +5017,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "向屏幕发送测试指令，调试工程时用",
                 colour:QH_ZKP_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -5156,8 +5035,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "注释用无特殊意义",
                 colour:QH_OTHER_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -5182,8 +5060,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "注释用无特殊意义",
                 colour:QH_OTHER_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -5215,8 +5092,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "创建变量",
                 colour:QH_OTHER_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -5234,8 +5110,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "获取变量",
                 colour:QH_OTHER_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_number']
             });
         }     
@@ -5257,8 +5132,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "设置变量",
                 colour:QH_OTHER_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }     
@@ -5281,8 +5155,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "设置变量",
                 colour:QH_OTHER_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }     
@@ -5296,8 +5169,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 message0: Blockly.Msg.COOPERATIVESCHEDULER_START,
                 args0: [],
                 colour: QH_OTHER_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -5336,8 +5208,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                     }
                 ],
                 colour: QH_OTHER_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_hat']
             });
             this.setNextStatement(false, null);
@@ -5353,8 +5224,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                     name: 'time'
                 }],
                 colour: QH_OTHER_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -5381,8 +5251,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "算术运算符",
                 colour: QH_OTHER_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_number']
             });
         }
@@ -5409,8 +5278,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "关系运算符",
                 colour: QH_OTHER_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_boolean']
             });
         }
@@ -5437,8 +5305,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "关系运算符\n\'&|^\': 位运算 \n举例:A & B A变量与B变量做位 与 运算\n \'<< >>\':移位运算符\n举例:A>>4 A变量右移4位.",
                 colour: QH_OTHER_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_number']
             });
         }
@@ -5464,8 +5331,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "限制数值介于指定两个数之间",
                 colour: QH_OTHER_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_number']
             });
         }
@@ -5499,8 +5365,7 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
                 ],
                 "tooltip": "将数值从一个区间映射到另一个区间,返回映射后的值.",
                 colour: QH_OTHER_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_number']
             });
         }

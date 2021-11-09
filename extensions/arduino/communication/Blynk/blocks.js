@@ -42,8 +42,7 @@ const QH_BLYNK_ICO = 'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFu
                 ],
                 "tooltip": 'wifi连接信息及blynk对应服务信息',
                 colour: blynk_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -74,8 +73,7 @@ const QH_BLYNK_ICO = 'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFu
                 ],
                 "tooltip": 'wifi连接信息及blynk对应服务信息',
                 colour: blynk_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -103,8 +101,7 @@ const QH_BLYNK_ICO = 'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFu
                 ],
                 "tooltip": "",
                 colour:blynk_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_hat']
             });
         }
@@ -132,8 +129,7 @@ const QH_BLYNK_ICO = 'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFu
                 ],
                 "tooltip": "",
                 colour:blynk_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_hat']
             });
         }
@@ -161,8 +157,7 @@ const QH_BLYNK_ICO = 'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFu
                 ],
                 "tooltip": "",
                 colour:blynk_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_hat']
             });
         }
@@ -177,8 +172,7 @@ const QH_BLYNK_ICO = 'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFu
                 ],
                 "tooltip": "",
                 colour:blynk_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_number']
             });
         }
@@ -202,8 +196,7 @@ const QH_BLYNK_ICO = 'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFu
                 ],
                 "tooltip": "串口打印",
                 colour:blynk_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -228,8 +221,7 @@ const QH_BLYNK_ICO = 'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFu
                 ],
                 "tooltip": "",
                 colour:blynk_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_number']
             });
         }
@@ -321,8 +313,7 @@ var BLYNK_VIRTUALPIN_SELECT1 = [
                 ],
                 "tooltip": "",
                 colour:blynk_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_hat']
             });
         }
@@ -359,8 +350,7 @@ var BLYNK_VIRTUALPIN_SELECT1 = [
                 ],
                 "tooltip": "更新时间在APP组件内设置，blynk向主机请求数据，适用于各种数据的显示，不用在主机端推送刷新，不会引发掉线。",
                 colour:blynk_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_hat']
             });
         }
@@ -386,8 +376,7 @@ var BLYNK_VIRTUALPIN_SELECT1 = [
                 ],
                 "tooltip": "",
                 colour:blynk_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -417,8 +406,7 @@ var BLYNK_VIRTUALPIN_SELECT1 = [
                 ],
                 "tooltip": "不要重复发送大量数据，会导致断线，谨慎使用！",
                 colour:blynk_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -471,8 +459,7 @@ var BLYNK_VIRTUALPIN_SELECT1 = [
                 ],
                 "tooltip": "更新时间不能小于1秒，或两个之间不能小于1秒，不然会引发掉线，尽量不用这个功能或少用！",
                 colour:blynk_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_hat']
             });
         }
@@ -507,8 +494,7 @@ var BLYNK_VIRTUALPIN_SELECT1 = [
                 ],
                 "tooltip": "",
                 colour:blynk_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -542,8 +528,7 @@ var BLYNK_VIRTUALPIN_SELECT1 = [
                 ],
                 "tooltip": "",
                 colour:blynk_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -576,8 +561,7 @@ var BLYNK_VIRTUALPIN_SELECT1 = [
                 ],
                 "tooltip": "",
                 colour:blynk_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -623,8 +607,7 @@ var BLYNK_VIRTUALPIN_SELECT1 = [
                 ],
                 "tooltip": "",
                 colour:blynk_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -657,8 +640,7 @@ var BLYNK_VIRTUALPIN_SELECT1 = [
                 ],
                 "tooltip": "",
                 colour:blynk_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_hat']
             });
         }
@@ -688,8 +670,7 @@ var BLYNK_VIRTUALPIN_SELECT1 = [
                 ],
                 "tooltip": "",
                 colour:blynk_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -727,8 +708,7 @@ var BLYNK_VIRTUALPIN_SELECT1 = [
                 ],
                 "tooltip": "",
                 colour:blynk_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -749,8 +729,7 @@ var BLYNK_VIRTUALPIN_SELECT1 = [
                 ],
                 "tooltip": "",
                 colour:blynk_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -793,8 +772,7 @@ var BLYNK_VIRTUALPIN_SELECT1 = [
                 ],
                 "tooltip": "",
                 colour:blynk_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -829,8 +807,7 @@ var BLYNK_VIRTUALPIN_SELECT1 = [
                 ],
                 "tooltip": "",
                 colour:blynk_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -856,8 +833,7 @@ var BLYNK_VIRTUALPIN_SELECT1 = [
                 ],
                 "tooltip": "",
                 colour:blynk_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -890,8 +866,7 @@ var BLYNK_VIRTUALPIN_SELECT1 = [
                 ],
                 "tooltip": "",
                 colour:blynk_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_hat']
             });
         }
@@ -921,8 +896,7 @@ var BLYNK_VIRTUALPIN_SELECT1 = [
                 ],
                 "tooltip": "",
                 colour:blynk_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -963,8 +937,7 @@ var BLYNK_VIRTUALPIN_SELECT1 = [
                 ],
                 "tooltip": "",
                 colour:blynk_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -999,8 +972,7 @@ var BLYNK_VIRTUALPIN_SELECT1 = [
                 ],
                 "tooltip": "",
                 colour:blynk_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -1034,8 +1006,7 @@ var BLYNK_VIRTUALPIN_SELECT1 = [
                 ],
                 "tooltip": "",
                 colour:blynk_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -1070,8 +1041,7 @@ var BLYNK_VIRTUALPIN_SELECT1 = [
                 ],
                 "tooltip": "",
                 colour:blynk_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -1096,8 +1066,7 @@ var BLYNK_VIRTUALPIN_SELECT1 = [
                 ],
                 "tooltip": "",
                 colour:blynk_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -1142,8 +1111,7 @@ var BLYNK_VIRTUALPIN_SELECT1 = [
                 ],
                 "tooltip": "",
                 colour:blynk_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_hat']
             });
         }
@@ -1176,8 +1144,7 @@ var BLYNK_VIRTUALPIN_SELECT1 = [
                 ],
                 "tooltip": "",
                 colour:blynk_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_hat']
             });
         }
@@ -1209,8 +1176,7 @@ var BLYNK_VIRTUALPIN_SELECT1 = [
                 ],
                 "tooltip": "",
                 colour:blynk_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_hat']
             });
         }
@@ -1229,8 +1195,7 @@ var BLYNK_VIRTUALPIN_SELECT1 = [
                 ],
                 "tooltip": "获取变量",
                 colour:QH_OTHER_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_number']
             });
         }     

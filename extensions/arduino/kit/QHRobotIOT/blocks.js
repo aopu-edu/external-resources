@@ -208,8 +208,7 @@ function addBlocks (Blockly) {
                     }
                 ],
                 colour: QH_MATRIX_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -235,8 +234,7 @@ function addBlocks (Blockly) {
                     }  
                 ],
                 colour: QH_MATRIX_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -380,8 +378,7 @@ function addBlocks (Blockly) {
                     }  
                 ],
                 colour: QH_MATRIX_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -416,8 +413,7 @@ function addBlocks (Blockly) {
                     }  
                 ],
                 colour: QH_MATRIX_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -460,8 +456,7 @@ function addBlocks (Blockly) {
                     }  
                 ],
                 colour: QH_MATRIX_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -497,8 +492,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "板载多功能按键，利用一个按键实现多种控制方式",
                 colour:QH_Sensor_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_hat']
             });
         }
@@ -533,8 +527,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "按钮输入",
                 colour:QH_Sensor_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_boolean']
             });
         }
@@ -564,8 +557,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "按钮输入",
                 colour:QH_Sensor_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_boolean']
             });
         }
@@ -601,8 +593,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "开启钮的多功能，必须在使用\"多功能按钮\"前先使用此块定义，\n相当于多功能的开关",
                 colour: QH_Sensor_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -648,8 +639,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "与按钮功能相同，只是启动这个功能后按法不一样，\n使用前要加 启用多功能按钮块",
                 colour: QH_Sensor_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_boolean']
             });
         }
@@ -679,8 +669,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "超声波传感器",
                 colour: QH_Sensor_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_number']
             });
         }
@@ -703,8 +692,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "超声波测距(I2C模式)，返回单位为mm,传感器盲区2CM\n拨码开关状态:IIC=ON,UART=OFF 切换模式后要断电重启模块！",
                 colour: QH_Sensor_color2,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_number']
             });
         }
@@ -737,8 +725,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "超声波测距(串口模式/IO模式)，返回单位为mm,传感器盲区2CM\n串口模式拨码开关状态:IIC=OFF,UART=ON\nIO模式拨码开关状态:IIC=OFF,UART=OFF 切换模式后要断电重启模块！",
                 colour: QH_Sensor_color2,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_number']
             });
         }
@@ -778,8 +765,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "左右感应器对白色物体约2CM时有输入(亮灯),\n相反对黑色物体不作反应，通常用来区分白黑",
                 colour: QH_Sensor_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_boolean']
             });
         }
@@ -808,8 +794,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "对光线强弱的感应，返回对应的模拟数值，\n亮数值变大，暗数值变小",
                 colour: QH_Sensor_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_number']
             });
         }
@@ -838,8 +823,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "对声音大小的感应，返回对应的模拟数值，\n周边噪声大值变大，相反变小",
                 colour: QH_Sensor_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_number']
             });
         }
@@ -868,8 +852,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "读取电位器的模拟阻值",
                 colour: QH_Sensor_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_number']
             });
         }
@@ -898,8 +881,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "土壤湿度传感器的模拟数值",
                 colour: QH_Sensor_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_number']
             });
         }
@@ -938,8 +920,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "读取传感器的摄氏温度值及相对湿度",
                 colour: QH_Sensor_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_number']
             });
         }
@@ -978,8 +959,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "启用颜色识别的初始化必要块，通过打印值得到对应的参数，实际运行时关闭打印功能，否则会干扰别的串口或IIC模块输出冲突。",
                 colour: QH_Sensor_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -1008,8 +988,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "颜色传感器读取的对应值变量",
                 colour: QH_Sensor_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_number']
             });
         }
@@ -1046,8 +1025,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "颜色传感器的值的应用",
                 colour: QH_Sensor_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_number']
             });
         }
@@ -1072,8 +1050,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "初始化陀螺仪,用在读取值前,只用一次即可",
                 colour: QH_Sensor_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -1110,8 +1087,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "陀螺仪获取数据",
                 colour: QH_Sensor_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_number']
             });
         }
@@ -1135,8 +1111,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "状态选单 高/低",
                 colour: QH_Actuator_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_boolean']
             });
         }
@@ -1164,8 +1139,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "开启LED灯",
                 colour: QH_Actuator_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -1203,8 +1177,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "开启LED灯",
                 colour: QH_Actuator_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -1238,8 +1211,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "读取LED灯状态",
                 colour: QH_Actuator_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_boolean']
             });
         }
@@ -1277,8 +1249,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "LED灯亮度调节",
                 colour: QH_Actuator_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -1316,8 +1287,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "继电器输出",
                 colour: QH_Actuator_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -1351,8 +1321,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "读取继电器状态",
                 colour: QH_Actuator_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_boolean']
             });
         }
@@ -1406,8 +1375,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "RGB对应灯号颜色的值，灯号共4个，总灯数跟模块灯数相同，0为全部同时工作\n对应的值是代表第几个灯的，最大255，0为关",
                 colour: QH_Actuator_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -1453,8 +1421,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "灯号共4个，总灯数跟模块灯数相同，0为全部同时工作",
                 colour: QH_Actuator_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -1497,8 +1464,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "蜂鸣器的发音设置，频率不同时发音不一样，时间为发音的持续时间",
                 colour: QH_Actuator_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -1540,8 +1506,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "蜂鸣器的发音设置，频率不同时发音不一样，时间为发音的持续时间",
                 colour: QH_Actuator_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_number']
             });
         }
@@ -1590,8 +1555,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "对应播放系统内音乐，直到自动播完",
                 colour: QH_Actuator_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -1626,8 +1590,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "蜂鸣器停止发声",
                 colour: QH_Actuator_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -1670,8 +1633,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "舵机,注意选择对应的舵机类型0~360度,不建议长时间运行！\n",
                 colour: QH_Actuator_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -1713,8 +1675,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "舵机,注意选择对应的舵机类型0~360度,不建议长时间运行！\n",
                 colour: QH_Actuator_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -1748,8 +1709,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "舵机,注意选择对应的舵机类型0~180度,不建议长时间运行！\n",
                 colour: QH_Actuator_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_number']
             });
         }
@@ -1781,8 +1741,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "",
                 colour: QH_SPEECH_color3,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -1882,8 +1841,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "",
                 colour: QH_SPEECH_color3,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_number']
             });
         }
@@ -1911,8 +1869,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "",
                 colour: QH_SPEECH_color3,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -1963,8 +1920,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "发送指令控制语音模块相关IO动作，输出高电平5V",
                 colour: QH_SPEECH_color2,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -1993,8 +1949,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "初始化定义模块端口,模块唤醒词：小齐小齐、小护小护、你好齐护、齐护机器人、齐护齐护，并亮起识别状态灯,\n其中识别词：音量增大/提高音量/增大音量/加大音量/减小音量/音量减小/最大音量/最小音量 为模块内部音量控制，不带输出。",
                 colour: QH_SPEECH_color2,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -2045,8 +2000,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "当接收到对应的语音指令时",
                 colour: QH_SPEECH_color2,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_boolean']
             });
         }
@@ -2075,8 +2029,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "初始化语音合成/识别模块",
                 colour: QH_SPEECH_color3,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -2126,8 +2079,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": '语音合成',
                 colour: QH_SPEECH_color3,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -2160,8 +2112,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "此为串口运行设备,合成模块中发出指定的提示音,注:编号一定要为两位的数值,个位数时要加0\n可以用“停止合成”块终止它",
                 colour: QH_SPEECH_color3,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -2185,8 +2136,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": '停止当前的合成及发音，有时内容过长时条件满足时执行此指令来停止合成中的发音,使用此指令时语音合成块要选为可中断',
                 colour: QH_SPEECH_color3,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -2217,8 +2167,7 @@ function addBlocks (Blockly) {
                                   +'请用套件中提供的软件按要求设定，可以直接输入中英文，拼音，标点可以使读音间断，\n'
                                   +'在“语音结果”块的前面使用并在同一运行块内\n“说出结果“是指说出识别到的语句',
                 colour: QH_SPEECH_color4,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -2246,8 +2195,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "请输入模块预设(烧录)的相关词组,如果非二次开发必须采用出厂词组相同，当识别到相同的结果时执行，在“开启语音识别”块的后面使用并在同一运行块内",
                 colour: QH_SPEECH_color4,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_boolean']
             });
         }
@@ -2276,8 +2224,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "请选择模块出厂设置的词组,当识别到相同的结果时执行，在“开启语音识别”块的后面使用并在同一运行块内",
                 colour: QH_SPEECH_color4,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_boolean']
             });
         }
@@ -2317,8 +2264,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "对应摇控器的按键输入，注：红外遥控器的“发送” “接收”在一个程序内不能同时使用，只能二选一！",
                 colour: QH_COMMUNICATE_color1,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_boolean']
             });
         }
@@ -2356,8 +2302,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "发送指定类型的红外数据，注：红外遥控器的“发送” “接收”在一个程序内不能同时使用，只能二选一！",
                 colour: QH_COMMUNICATE_color1,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -2386,8 +2331,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "红外解码对应遥控键值,并打印在串口(115200)，请复制保存数组和长度值，用在发射数组中！",
                 colour: QH_COMMUNICATE_color1,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -2433,8 +2377,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "将读取到的红外数组放入这里发送，注意数组长度要对应长度，不同数组时要改变编号！",
                 colour: QH_COMMUNICATE_color1,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -2468,8 +2411,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "注：内置蓝牙只支持手机蓝牙4.2",
                 colour: QH_COMMUNICATE_color2,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -2498,8 +2440,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "接收到蓝牙模块在对应APP输入的按键设定字符值（APP发送格式为[,发送的字符.]）,\n在[启用蓝牙接收]后有效",
                 colour: QH_COMMUNICATE_color2,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_boolean']
             });
         }
@@ -2528,8 +2469,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "蓝牙APP上的滑动变量对应值,在[启用蓝牙接收]后有效",
                 colour: QH_COMMUNICATE_color2,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_number']
             });
         }
@@ -2578,8 +2518,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": " 蓝牙APP V1~V5 显示变量对应值,可以为传感器值或字符串，注：重复发送要加延时间隔约30毫秒！",
                 colour: QH_COMMUNICATE_color2,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -2612,8 +2551,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "此为串口运行,直接将读到的值和设定值对比,相同时为真,可用于蓝牙等模块的通讯回读",
                 colour: QH_COMMUNICATE_color1,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_boolean']
             });
         }
@@ -2651,8 +2589,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "指定串口发送数值，如多串口设备运行，运行前要加“软串口定义到”块指令进行切换串口",
                 colour: QH_COMMUNICATE_color1,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -2681,8 +2618,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "当串口有数据读时读取的值",
                 colour: QH_COMMUNICATE_color1,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_number']
             });
         }
@@ -2711,8 +2647,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "软串有数据读取时",
                 colour: QH_COMMUNICATE_color1,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_boolean']
             });
         }
@@ -2742,8 +2677,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "MP3端口指定",
                 colour: QH_MP3_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -2775,8 +2709,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "播放顺序为复制到内存卡里的时间为先后排序,注:复制时按时间排序，然后对着第一个时间点右键复制到内存卡，此时会按时间排序！",
                 colour: QH_MP3_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -2804,8 +2737,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "MP3音量",
                 colour: QH_MP3_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -2837,8 +2769,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "MP3重复播放",
                 colour: QH_MP3_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -2867,8 +2798,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "MP3播放暂停",
                 colour: QH_MP3_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -2897,8 +2827,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "MP3上一首/下一首",
                 colour: QH_MP3_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -2931,8 +2860,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "MP3播放音效",
                 colour: QH_MP3_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -2960,8 +2888,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "使用批处理命令获取SD卡文件目录",
                 colour: QH_MP3_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -2998,8 +2925,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "指定文件名播放音频",
                 colour: QH_MP3_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -3037,8 +2963,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "显示数字与字母",
                 colour: QH_SMG_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -3067,8 +2992,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "数码管清屏",
                 colour: QH_SMG_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -3097,8 +3021,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "关闭数码管",
                 colour: QH_SMG_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -3127,8 +3050,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "TM1637初始化",
                 colour: QH_SMG_COLOR2,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -3156,8 +3078,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "TM1637设置亮度",
                 colour: QH_SMG_COLOR2,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -3186,8 +3107,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "TM1637清屏",
                 colour: QH_SMG_COLOR2,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -3215,8 +3135,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "TM1637打印显示",
                 colour: QH_SMG_COLOR2,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -3258,8 +3177,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "TM1637打印显示",
                 colour: QH_SMG_COLOR2,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -3500,8 +3418,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "取模工具设置部分",
                 colour: QH_OLED_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_number']
             });
         }
@@ -3567,8 +3484,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "OLED清屏",
                 colour: QH_OLED_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -3587,8 +3503,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "返回UTF8字符串宽度",
                 colour: QH_OLED_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_number']
             });
         }
@@ -3616,8 +3531,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "OLED背光亮度",
                 colour: QH_OLED_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -3682,8 +3596,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "OLED显示内置图片",
                 colour: QH_OLED_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -3761,8 +3674,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "显示-OLED-画点",
                 colour: QH_OLED_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -3802,8 +3714,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "显示-OLED-画线",
                 colour: QH_OLED_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -3843,8 +3754,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "显示-OLED-画直线",
                 colour: QH_OLED_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -3888,8 +3798,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "显示-OLED-画矩形",
                 colour: QH_OLED_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -3937,8 +3846,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "显示-OLED-画圆角矩形",
                 colour: QH_OLED_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -3983,8 +3891,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "显示-OLED-画圆（空心，实心）",
                 colour: QH_OLED_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -4033,8 +3940,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "显示-OLED-画椭圆（空心，实心）",
                 colour: QH_OLED_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -4082,8 +3988,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "显示-OLED-画三角",
                 colour: QH_OLED_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -4128,8 +4033,7 @@ function addBlocks (Blockly) {
                 "tooltip": "LCD初始化",
                 "inputsInline": false,
                 colour:QH_LCD_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -4168,8 +4072,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "LCD打印",
                 colour:QH_LCD_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -4208,8 +4111,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "LCD打印2",
                 colour:QH_LCD_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -4241,8 +4143,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "LCD初始化",
                 colour:QH_LCD_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -4270,8 +4171,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "屏坐标:X最大160，Y最大130",
                 colour: QH_SDISPLAY_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -4343,8 +4243,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "横坚屏设置",
                 colour: QH_SDISPLAY_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -4377,8 +4276,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "屏亮度设置",
                 colour: QH_SDISPLAY_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -4417,8 +4315,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "颜色刷屏或背景颜色设置",
                 colour: QH_SDISPLAY_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -4473,8 +4370,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "颜色刷屏或背景颜色设置",
                 colour: QH_SDISPLAY_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -4515,8 +4411,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "画点",
                 colour: QH_SDISPLAY_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -4572,8 +4467,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "画线框",
                 colour: QH_SDISPLAY_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -4624,8 +4518,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "画圆",
                 colour: QH_SDISPLAY_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -4677,8 +4570,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "显示文本信息",
                 colour: QH_SDISPLAY_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -4734,8 +4626,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "显示带底色的文本信息",
                 colour: QH_SDISPLAY_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -4768,8 +4659,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "输入自定义指令",
                 colour: QH_SDISPLAY_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -4806,8 +4696,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "设置屏的通讯波特率，9600（出厂值），每次更改后要关电重启，不建议更改！",
                 colour: QH_SDISPLAY_color,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -4837,8 +4726,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "P5接口 上传程序时不要插模块 屏上的滑动变量对应值,在“屏按键”和“屏滑动变量”前使用",
                 colour:QH_ZKP_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -4860,8 +4748,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "P5接口 上传程序时不要插模块 屏上的滑动变量对应值,在“屏按键”和“屏滑动变量”前使用",
                 colour:QH_ZKP_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -4889,8 +4776,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "P5接口 上传程序时不要插模块 接收到屏上对应输入的按键设定字符值（屏发送格式为“,发送的字符.”）,\n在“启用屏接收数据”后有效",
                 colour:QH_ZKP_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_boolean']
             });
         }
@@ -4918,8 +4804,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "P5接口 上传程序时不要插模块 屏上的滑动变量对应值,在“启用屏接收数据”后有效",
                 colour:QH_ZKP_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_number']
             });
         }
@@ -4951,8 +4836,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "P5接口 上传程序时不要插模块 屏上V1~V5显示变量对应值,可以为传感器值或字符串，注：重复发送要加延时间隔约300毫秒！",
                 colour:QH_ZKP_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -4980,8 +4864,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "进入睡眠后屏关闭,退出睡眠自动开启屏显.",
                 colour:QH_ZKP_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -5015,8 +4898,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "屏蜂鸣器的发音频率及音量大小",
                 colour:QH_ZKP_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -5044,8 +4926,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "常用颜色的选择",
                 colour:QH_ZKP_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_number']
             });
         }
@@ -5072,8 +4953,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "全屏显示一个颜色（十进制颜色号）或采用颜色定义块",
                 colour:QH_ZKP_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -5101,8 +4981,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "内存图片全屏显示",
                 colour:QH_ZKP_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -5130,8 +5009,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "跳转的指定的页面",
                 colour:QH_ZKP_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -5175,8 +5053,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "画圆工具，在屏上显示，设置中心点(X最大320,Y最大240)及半径颜色，可选择实心或空心",
                 colour:QH_ZKP_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -5224,8 +5101,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "画图工具，设置起点和终点/对角坐标的坐标值(X最大320,Y最大240)",
                 colour:QH_ZKP_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -5281,8 +5157,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "在屏幕上指定的区域显示文字，XY为起始点，WH是区域的长和高",
                 colour:QH_ZKP_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -5338,8 +5213,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "在屏幕上指定的区域显示文字，XY为起始点，WH是区域的长和高",
                 colour:QH_ZKP_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -5366,8 +5240,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "向屏幕发送测试指令，调试工程时用",
                 colour:QH_ZKP_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -5395,8 +5268,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "设置内存大小，最大4096字节\n注：请将ArduinoJson库更新到5.13.5版本，否则不能用！打开Mixly内的ArduinoIDE/工具/库管理/ArduinoJson/选5.13.5安装",
                 colour:QH_STORAGE_COLOR1,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -5424,8 +5296,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "查找内存",
                 colour:QH_STORAGE_COLOR1,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_boolean']
             });
         }
@@ -5469,8 +5340,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "发送数据到缓存",
                 colour:QH_STORAGE_COLOR1,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -5494,8 +5364,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "清除缓存中所数据，需提交操作",
                 colour:QH_STORAGE_COLOR1,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -5519,8 +5388,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "所有动作完成后都要执行一次提交，包括：缓存保存到EEPROM，清除。",
                 colour:QH_STORAGE_COLOR1,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -5560,8 +5428,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "数据读取对应的值",
                 colour:QH_STORAGE_COLOR1,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_number']
             });
         }
@@ -5585,8 +5452,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "读取EEROM中的字符串，默认读取字符串最大长度64，地址0为起始位",
                 colour:QH_STORAGE_COLOR2,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_number']
             });
         }
@@ -5614,8 +5480,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "将字符串写入EEROM，默认写入字符串最大长度64，地址0为起始位",
                 colour:QH_STORAGE_COLOR2,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -5653,8 +5518,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "列表初始化，以指定的数据类型及列表名声明列表",
                 colour:QH_LIST_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -5683,8 +5547,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "返回列表的长度（即数据的项数）",
                 colour:QH_LIST_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_number']
             });
         }
@@ -5717,8 +5580,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "返回指定列表项的值（0项为第一项）",
                 colour:QH_LIST_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_number']
             });
         }
@@ -5755,8 +5617,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "对指定的列表项赋值",
                 colour:QH_LIST_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -5794,8 +5655,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "列表指定规则添加数据项（从首端或尾端添加）",
                 colour:QH_LIST_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -5824,8 +5684,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "清除整个列表",
                 colour:QH_LIST_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -5858,8 +5717,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "删除指定的列表项",
                 colour:QH_LIST_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -5884,8 +5742,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "需要关注安可信公众号进行一键配网，可以与网页编辑一起使用",
                 colour:QH_WIFI_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -5910,8 +5767,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "连接配网热点自动打开网页配置无需关注公众号，不可与网页编辑一起使用。(仅单独使用！配网热点名qdprobot，密码12345678)",
                 colour:QH_WIFI_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -5943,8 +5799,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "开启AP",
                 colour:QH_WIFI_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -5976,8 +5831,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "连接WIFI",
                 colour:QH_WIFI_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -5992,8 +5846,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "wifi连接状态",
                 colour:QH_WIFI_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_boolean']
             });
         }
@@ -6008,8 +5861,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "IP地址",
                 colour:QH_WIFI_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_number']
             });
         }
@@ -6024,8 +5876,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "IP地址",
                 colour:QH_WIFI_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_number']
             });
         }
@@ -6050,8 +5901,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "串口打印",
                 colour:QH_COMMUNICATE_color1,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -6088,8 +5938,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "注册对应的邮箱开启IMAP/SMTP服务，填写对应的邮箱账号及\"授权码\"\n即可使用硬件发送邮件，转到网易163邮箱服务器内设置。",
                 colour:QH_WIFI_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -6125,8 +5974,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "指定收件人，主题及邮件内容发送邮件",
                 colour:QH_WIFI_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -6154,8 +6002,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "配置域名",
                 colour:QH_WIFI_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -6183,8 +6030,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "自定义ESP32或ESP8266的MAC地址",
                 colour:QH_WIFI_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -6208,8 +6054,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "ESP8266复位重启",
                 colour:QH_WIFI_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -6249,8 +6094,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "esp_now发送数据",
                 colour:QH_WIFI_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -6278,8 +6122,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "esp_now接收数据",
                 colour:QH_WIFI_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_hat']
             });
         }
@@ -6327,8 +6170,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "获取两个日期差值",
                 colour:QH_OTHER_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_number']
             });
         }
@@ -6347,8 +6189,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "注释用无特殊意义",
                 colour:QH_OTHER_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -6373,8 +6214,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "注释用无特殊意义",
                 colour:QH_OTHER_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -6508,8 +6348,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "简单定时器",
                 colour:QH_OTHER_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_hat']
             });
         }
@@ -6542,8 +6381,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "创建变量",
                 colour:QH_OTHER_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -6561,8 +6399,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "获取变量",
                 colour:QH_OTHER_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_number']
             });
         }     
@@ -6580,8 +6417,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "字符串",
                 colour:QH_OTHER_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_number']
             });
         }     
@@ -6599,8 +6435,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "字符",
                 colour:QH_OTHER_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_number']
             });
         }     
@@ -6622,8 +6457,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "设置变量",
                 colour:QH_OTHER_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }     
@@ -6646,8 +6480,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "设置变量",
                 colour:QH_OTHER_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }     
@@ -6679,8 +6512,7 @@ function addBlocks (Blockly) {
                     }
                     ],
                 colour: QH_OTHER_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_hat']
             });
             this.setNextStatement(false, null);
@@ -6709,8 +6541,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "算术运算符",
                 colour: QH_OTHER_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_number']
             });
         }
@@ -6737,8 +6568,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "关系运算符",
                 colour: QH_OTHER_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_boolean']
             });
         }
@@ -6765,8 +6595,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "关系运算符\n\'&|^\': 位运算 \n举例:A & B A变量与B变量做位 与 运算\n \'<< >>\':移位运算符\n举例:A>>4 A变量右移4位.",
                 colour: QH_OTHER_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_number']
             });
         }
@@ -6792,8 +6621,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "限制数值介于指定两个数之间",
                 colour: QH_OTHER_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_number']
             });
         }
@@ -6827,8 +6655,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "将数值从一个区间映射到另一个区间,返回映射后的值.",
                 colour: QH_OTHER_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_number']
             });
         }
@@ -6847,8 +6674,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "utf8togbk",
                 colour:QH_OTHER_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_number']
             });
         }
@@ -6872,8 +6698,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "utf8togbk",
                 colour:QH_OTHER_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_number']
             });
         }
@@ -6906,8 +6731,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "输入正确的城市名（不用带“市”字)如：深圳 北京 广州，如果错误会显示'error'刷新成功则返回true\n天气接口优化注意：\n1. 接口每 8 小时更新一次，机制是  CDN  缓存 8 小时更新一次。注意：自己做缓存。\n2. 接口采用城市 ID 来精准查询请求，省份不能直接查询天气。\n3.每分钟阈值为 300 次，如果超过会禁用一天。请谨慎使用。",
                 colour:QH_WIFI_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_boolean']
             });
         }
@@ -6936,8 +6760,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "返回对应数据 字符串型。",
                 colour:QH_WIFI_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_number']
             });
         }
@@ -6970,8 +6793,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "返回预报天气内容0表示当天，最大为14，字符串型。",
                 colour:QH_WIFI_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_number']
             });
         }
@@ -7007,8 +6829,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "NTP时间服务器",
                 colour:QH_WIFI_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -7044,8 +6865,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "NTP时间服务器",
                 colour:QH_WIFI_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_number']
             });
         }

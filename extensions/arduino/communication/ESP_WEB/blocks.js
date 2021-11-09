@@ -27,8 +27,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "要显示的网页元素放入这个块内",
                 colour:QH_WEB_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -71,8 +70,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "名称只支持英文",
                 colour:QH_WEB_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -114,8 +112,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "名称只支持英文",
                 colour:QH_WEB_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -155,8 +152,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "名称只支持英文",
                 colour:QH_WEB_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -181,8 +177,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "如果插入滑杆组件,用于链接滑杆事件.放在初始化内",
                 colour:QH_WEB_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -201,8 +196,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "",
                 colour:QH_WEB_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_number']
             });
         }
@@ -230,8 +224,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "网页滑杆变化事件",
                 colour:QH_WEB_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_hat']
             });
         }
@@ -256,8 +249,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "",
                 colour:QH_WEB_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -285,8 +277,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "网页滑杆变化事件",
                 colour:QH_WEB_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_hat']
             });
         }
@@ -305,8 +296,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "网页按钮ID",
                 colour:QH_WEB_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_number']
             });
         }
@@ -350,8 +340,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "网页插入折线图元素",
                 colour:QH_WEB_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -387,8 +376,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "网页更新折线图元素",
                 colour:QH_WEB_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -432,8 +420,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "网页更新元素",
                 colour:QH_WEB_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -454,8 +441,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "网页串口初始化",
                 colour:QH_WEB_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -488,8 +474,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "网页串行打印\n<IP Address>/webserial",
                 colour:QH_WEB_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -517,8 +502,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "网页读取字符串 变量名: web_data",
                 colour:QH_WEB_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_hat']
             });
         }

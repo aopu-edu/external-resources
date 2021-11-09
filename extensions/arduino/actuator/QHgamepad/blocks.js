@@ -42,8 +42,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "为按键中断事件,事件内执行的程序不宜太多.'",
                 colour:QH_GAMEPAD_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_hat']
             });
         }
@@ -67,8 +66,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "摇杆无动作时返回-1,其余返回角度",
                 colour: QH_GAMEPAD_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_number']
             });
         }

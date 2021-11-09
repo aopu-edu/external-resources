@@ -45,8 +45,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "巴法云主题订阅",
                 colour:QH_BEMFA_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -89,8 +88,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "巴法云主题消息发送",
                 colour:QH_BEMFA_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -114,8 +112,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "串口打印",
                 colour:QH_BEMFA_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
             });
         }
@@ -134,8 +131,7 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "获取变量",
                 colour:QH_BEMFA_COLOR,
-                colourSecondary: '#ffffff',
-                colourTertiary: '#ffffff',
+                colourTertiary: '#C0C0C0',
                 extensions: ['output_number']
             });
         }     
