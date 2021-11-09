@@ -41,6 +41,8 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "IOT_PRO电机控制，-255~255 正数为正转，负数为反转，0为停止。",
                 colour: QH_IOTPRO_COLOR,
+                colourSecondary: '#ffffff',
+                colourTertiary: '#ffffff',
                 extensions: ['shape_statement']
             });
         }
@@ -69,6 +71,8 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "IOT_PRO电机控制",
                 colour: QH_IOTPRO_COLOR,
+                colourSecondary: '#ffffff',
+                colourTertiary: '#ffffff',
                 extensions: ['shape_statement']
             });
         }
@@ -102,6 +106,8 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "IOT-Pro电机编码器计数/暂停/清除计数",
                 colour: QH_IOTPRO_COLOR,
+                colourSecondary: '#ffffff',
+                colourTertiary: '#ffffff',
                 extensions: ['shape_statement']
             });
         }
@@ -130,6 +136,8 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "IOT-Pro电机编码器获取计数值,返回int64_t类型数据,在打印输出和运算中请注意此数据类型,arduino无法直接打印此类型,注意数据转换。",
                 colour: QH_IOTPRO_COLOR,
+                colourSecondary: '#ffffff',
+                colourTertiary: '#ffffff',
                 extensions: ['output_number']
             });
         }
@@ -163,6 +171,8 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "D0~D7只能设置为数字输入或输出",
                 colour: QH_IOTPRO_COLOR,
+                colourSecondary: '#ffffff',
+                colourTertiary: '#ffffff',
                 extensions: ['shape_statement']
             });
         }
@@ -196,6 +206,8 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "D0~D7只能设置为数字输入或输出,可选内部上拉输入",
                 colour: QH_IOTPRO_COLOR,
+                colourSecondary: '#ffffff',
+                colourTertiary: '#ffffff',
                 extensions: ['output_boolean']
             });
         }
@@ -241,6 +253,8 @@ function addBlocks (Blockly) {
                 ],
                 "tooltip": "勾选对应功能为ON时，主控板D0~D4对应接传感器D1~D5,如果状态符合返回True.否则返回False.碰撞传感器可以使用数字读取块读取状态,",
                 colour: QH_IOTPRO_COLOR,
+                colourSecondary: '#ffffff',
+                colourTertiary: '#ffffff',
                 extensions: ['output_boolean']
             });
         }
