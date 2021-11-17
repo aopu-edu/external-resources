@@ -123,7 +123,7 @@ void QDP16PWM::setPWM(uint8_t num, uint16_t on, uint16_t off) {
 void QDP16PWM::setPin(uint8_t num, uint16_t val, bool invert)
 {
   // Clamp value between 0 and 4095 inclusive.
-  val = min(val, (uint16_t)4095);
+  //val = min(val, (uint16_t)4095);
   if (invert) {
     if (val == 0) {
       setPWM(num, 4096, 0);
