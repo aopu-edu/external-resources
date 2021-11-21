@@ -374,6 +374,7 @@ function addBlocks (Blockly) {
     ["M2", "2"],
     ["M3", "3"],
     ["M4", "4"]];
+    const QH_ROBOT_PWMPCB=[["B0", "0"],["B1", "1"],["B2", "2"],["B3", "3"],["B4", "4"],["B5", "5"],["B6", "6"],["B7", "7"],["B8", "8"],["B9", "9"],["B10", "A"],["B11", "B"],["B12", "C"],["B13", "D"],["B14", "E"],["B15", "F"]];
     const QDP_ASR_keyword_dropdown2 =[
     ["唤醒","starton"],
     ["退出识别","startoff"],
@@ -2501,6 +2502,168 @@ function addBlocks (Blockly) {
                 colour: QH_Actuator_color,
                 colourTertiary: '#C0C0C0',
                 extensions: ['output_number']
+            });
+        }
+    };
+
+    //舵机板设置参数180
+    Blockly.Blocks.qdp_esp32_servomotorPWM_set180 = {
+        init: function () {
+            this.jsonInit({
+                message0: '%1',
+                message1: Blockly.Msg.qdp_esp32_servomotorPWM_set180,
+                args0: [
+                    {
+                        type: 'field_image',
+                        src: QH_MOTOR_ICO,
+                        width: 30,
+                        height: 30
+                    }
+                ],
+                args1: [
+                    {
+                        type: 'field_dropdown',
+                        name: 'pin',
+                        options: QH_ROBOT_PWMPCB
+                    },
+                    {
+                        type: 'input_value',
+                        name: 'param1'
+                    },
+                    {
+                        type: 'input_value',
+                        name: 'param2'
+                    }
+                ],
+                "tooltip": "舵机板类型0~180度舵机参数初始块，默认值为180度用，用户可以进行微调\n",
+                colour: QH_Actuator_color,
+                colourTertiary: '#C0C0C0',
+                extensions: ['shape_statement']
+            });
+        }
+    };
+    //舵机板180设置角度
+    Blockly.Blocks.qdp_esp32_servomotorPWM = {
+        init: function () {
+            this.jsonInit({
+                message0: '%1',
+                message1: Blockly.Msg.qdp_esp32_servomotorPWM,
+                args0: [
+                    {
+                        type: 'field_image',
+                        src: QH_MOTOR_ICO,
+                        width: 30,
+                        height: 30
+                    }
+                ],
+                args1: [
+                    {
+                        type: 'field_dropdown',
+                        name: 'pin',
+                        options: QH_ROBOT_PWMPCB
+                    },
+                    {
+                        type: 'input_value',
+                        name: 'num1'
+                    },
+                    {
+                        type: 'input_value',
+                        name: 'num2'
+                    }
+                ],
+                "tooltip": "舵机板I2C接口地址,一个板可以接16个舵机,编号0~15,可以并联16个板,外接电源5~6V,当角度设置为负的时候为停止.注意选择对应的舵机类型0~180度,使用前要放一个180参数设置块初始化\n",
+                colour: QH_Actuator_color,
+                colourTertiary: '#C0C0C0',
+                extensions: ['shape_statement']
+            });
+        }
+    };
+    //舵机板设置参数360
+    Blockly.Blocks.qdp_esp32_servomotorPWM_set360 = {
+        init: function () {
+            this.jsonInit({
+                message0: '%1',
+                message1: Blockly.Msg.qdp_esp32_servomotorPWM_set360,
+                args0: [
+                    {
+                        type: 'field_image',
+                        src: QH_MOTOR_ICO,
+                        width: 30,
+                        height: 30
+                    }
+                ],
+                args1: [
+                    {
+                        type: 'field_dropdown',
+                        name: 'pin',
+                        options: QH_ROBOT_PWMPCB
+                    },
+                    {
+                        type: 'input_value',
+                        name: 'S_param'
+                    },
+                    {
+                        type: 'input_value',
+                        name: 'CW_L_param'
+                    },
+                    {
+                        type: 'input_value',
+                        name: 'CW_H_param'
+                    },
+                    {
+                        type: 'input_value',
+                        name: 'CCW_L_param'
+                    },
+                    {
+                        type: 'input_value',
+                        name: 'CCW_H_param'
+                    }
+                ],
+                "tooltip": "舵机板类型0~36度舵机参数初始块，默认值为360度用，用户可以进行微调\n",
+                colour: QH_Actuator_color,
+                colourTertiary: '#C0C0C0',
+                extensions: ['shape_statement']
+            });
+        }
+    };
+    //舵机板360度
+    Blockly.Blocks.qdp_esp32_servomotorPWM360 = {
+        init: function () {
+            this.jsonInit({
+                message0: '%1',
+                message1: Blockly.Msg.qdp_esp32_servomotorPWM360,
+                args0: [
+                    {
+                        type: 'field_image',
+                        src: QH_MOTOR_ICO,
+                        width: 30,
+                        height: 30
+                    }
+                ],
+                args1: [
+                    {
+                        type: 'field_dropdown',
+                        name: 'pin',
+                        options: QH_ROBOT_PWMPCB
+                    },
+                    {
+                        type: 'field_dropdown',
+                        name: 'pin3',
+                        options: [[Blockly.Msg.QH_CW,'1'],[Blockly.Msg.QH_CCW,'0'],]
+                    },
+                    {
+                        type: 'input_value',
+                        name: 'num2'
+                    },
+                    {
+                        type: 'input_value',
+                        name: 'num1'
+                    }
+                ],
+                "tooltip": "舵机板I2C接口地址,一个板可以接16个舵机,号0~15,速度为0的时候为停止.可以并联16个板,外接电源5~6V,注意选择对应的舵机类型0~360度,不建议长时间运行！使用前要放一个360度参数设置块初始化\n",
+                colour: QH_Actuator_color,
+                colourTertiary: '#C0C0C0',
+                extensions: ['shape_statement']
             });
         }
     };

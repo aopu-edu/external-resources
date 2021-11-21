@@ -8048,6 +8048,63 @@ Blockly.Arduino.qdp_ESP8266_servomotorread = function() {
    return [code, Blockly.Arduino.ORDER_ATOMIC];
 };
 
+//舵机板设置参数180
+    Blockly.Arduino.qdp_ESP8266_servomotorPWM_set180 = function() {
+        var dropdown_pin = this.getFieldValue('pin');
+        var param1 = Blockly.Arduino.valueToCode(this, 'param1',Blockly.Arduino.ORDER_ATOMIC) || '0';
+        var param2 = Blockly.Arduino.valueToCode(this, 'param2',Blockly.Arduino.ORDER_ATOMIC) || '0';
+        Blockly.Arduino.definitions_['include_Wire'] = '#include <Wire.h>';
+        Blockly.Arduino.definitions_['define_qdportPWM2'] = '#include "QDP16PWM.h"';
+        Blockly.Arduino.definitions_['var_declare_qdprobot_PWM'+dropdown_pin] = 'QDP16PWM pwm'+dropdown_pin+' = QDP16PWM(0x4'+dropdown_pin+');\n';
+        Blockly.Arduino.setups_['setup_output_PWM_set180'+dropdown_pin] ='pwm'+dropdown_pin+'.set_180('+param1+','+param2+');\n';
+        var code = '';
+        return code;
+    };
+    //舵机板180
+    Blockly.Arduino.qdp_ESP8266_servomotorPWM = function() {
+        var dropdown_pin = this.getFieldValue('pin');
+        var num1 = Blockly.Arduino.valueToCode(this, 'num1',Blockly.Arduino.ORDER_ATOMIC) || '0';
+        var num2 = Blockly.Arduino.valueToCode(this, 'num2',Blockly.Arduino.ORDER_ATOMIC) || '0';
+
+        Blockly.Arduino.definitions_['include_Wire'] = '#include <Wire.h>';
+        Blockly.Arduino.definitions_['define_qdportPWM2'] = '#include "QDP16PWM.h"';
+        Blockly.Arduino.definitions_['var_declare_qdprobot_PWM'+dropdown_pin] = 'QDP16PWM pwm'+dropdown_pin+' = QDP16PWM(0x4'+dropdown_pin+');\n';
+        Blockly.Arduino.setups_['setup_output_PWM'+dropdown_pin] ='pwm'+dropdown_pin+'.begin();\n';
+        var code = 'pwm'+dropdown_pin+'.setDegree1('+num1+','+num2+');\n';
+        return code;
+    };
+    //舵机板360度设置参数
+    Blockly.Arduino.qdp_ESP8266_servomotorPWM_set360 = function() {
+        var dropdown_pin = this.getFieldValue('pin');
+        var S_param = Blockly.Arduino.valueToCode(this, 'S_param',Blockly.Arduino.ORDER_ATOMIC) || '0';
+        var CW_L_param = Blockly.Arduino.valueToCode(this, 'CW_L_param',Blockly.Arduino.ORDER_ATOMIC) || '0';
+        var CW_H_param = Blockly.Arduino.valueToCode(this, 'CW_H_param',Blockly.Arduino.ORDER_ATOMIC) || '0';
+        var CCW_L_param = Blockly.Arduino.valueToCode(this, 'CCW_L_param',Blockly.Arduino.ORDER_ATOMIC) || '0';
+        var CCW_H_param = Blockly.Arduino.valueToCode(this, 'CCW_H_param',Blockly.Arduino.ORDER_ATOMIC) || '0';
+        var num1 = Blockly.Arduino.valueToCode(this, 'num1',Blockly.Arduino.ORDER_ATOMIC) || '0';
+
+        Blockly.Arduino.definitions_['include_Wire'] = '#include <Wire.h>';
+        Blockly.Arduino.definitions_['define_qdportPWM2'] = '#include "QDP16PWM.h"';
+        Blockly.Arduino.definitions_['var_declare_qdprobot_PWM'+dropdown_pin] = 'QDP16PWM pwm'+dropdown_pin+' = QDP16PWM(0x4'+dropdown_pin+');\n';
+        Blockly.Arduino.setups_['setup_output_PWM_set360'+dropdown_pin] ='pwm'+dropdown_pin+'.set_360('+S_param+','+CW_L_param+','+CW_H_param+','+CCW_L_param+','+CCW_H_param+');\n';
+        var code = '';
+        return code;
+    };
+    //舵机板360度
+    Blockly.Arduino.qdp_ESP8266_servomotorPWM360 = function() {
+        var dropdown_pin = this.getFieldValue('pin');
+        var dropdown_pin3 = this.getFieldValue('pin3');
+        var num1 = Blockly.Arduino.valueToCode(this, 'num1',Blockly.Arduino.ORDER_ATOMIC) || '0';
+        var num2 = Blockly.Arduino.valueToCode(this, 'num2',Blockly.Arduino.ORDER_ATOMIC) || '0';
+
+        Blockly.Arduino.definitions_['include_Wire'] = '#include <Wire.h>';
+        Blockly.Arduino.definitions_['define_qdportPWM2'] = '#include "QDP16PWM.h"';
+        Blockly.Arduino.definitions_['var_declare_qdprobot_PWM'+dropdown_pin] = 'QDP16PWM pwm'+dropdown_pin+' = QDP16PWM(0x4'+dropdown_pin+');\n';
+        Blockly.Arduino.setups_['setup_output_PWM'+dropdown_pin] ='pwm'+dropdown_pin+'.begin();\n';
+        var code = 'pwm'+dropdown_pin+'.setDegree2('+num2+','+dropdown_pin3+','+num1+ ');\n';
+        return code;
+    };
+
 //蜂鸣器选单
   Blockly.Arduino.qdp_buzzer_Dropdown=function(){
   var dropdown_pin = this.getFieldValue('PIN2'); 

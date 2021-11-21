@@ -421,6 +421,69 @@ function addToolbox () {
         </value>
     </block>
     <block type="qdp_esp32_servomotorread"></block>
+    <block type="qdp_esp32_servomotorPWM_set180">
+        <value name="param1">
+            <shadow type="math_number">
+                <field name="NUM">100</field>
+            </shadow>
+        </value>
+        <value name="param2">
+            <shadow type="math_number">
+                <field name="NUM">460</field>
+            </shadow>
+        </value>
+    </block>
+    <block type="qdp_esp32_servomotorPWM">
+        <value name="num1">
+            <shadow type="math_number">
+                <field name="NUM">0</field>
+            </shadow>
+        </value>
+        <value name="num2">
+            <shadow type="math_number">
+                <field name="NUM">0</field>
+            </shadow>
+        </value>
+    </block>
+    <block type="qdp_esp32_servomotorPWM_set360">
+        <value name="S_param">
+            <shadow type="math_number">
+                <field name="NUM">270</field>
+            </shadow>
+        </value>
+        <value name="CW_L_param">
+            <shadow type="math_number">
+                <field name="NUM">230</field>
+            </shadow>
+        </value>
+        <value name="CW_H_param">
+            <shadow type="math_number">
+                <field name="NUM">80</field>
+            </shadow>
+        </value>
+        <value name="CCW_L_param">
+            <shadow type="math_number">
+                <field name="NUM">300</field>
+            </shadow>
+        </value>
+        <value name="CCW_H_param">
+            <shadow type="math_number">
+                <field name="NUM">450</field>
+            </shadow>
+        </value>
+    </block>
+    <block type="qdp_esp32_servomotorPWM360">
+        <value name="num2">
+            <shadow type="math_number">
+                <field name="NUM">0</field>
+            </shadow>
+        </value>
+        <value name="num1">
+            <shadow type="math_number">
+                <field name="NUM">5</field>
+            </shadow>
+        </value>
+    </block>
 </category>
 <category name="%{BKY_QH_SPEECH_CATEGORY}" id="QH_SPEECH_CATEGORY" colour="#42CCFF" secondaryColour="#42CCFF" iconURI="${QH_SPEECH_ICO}">
     <block type="QDP32_ASR_SendData"></block>
