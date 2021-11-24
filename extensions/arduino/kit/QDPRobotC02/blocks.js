@@ -2691,7 +2691,24 @@ function addBlocks (Blockly) {
                     {
                         type: 'field_dropdown',
                         name: 'keyword',
-                        options: QDP_ASR_keyword_dropdown2
+                        options: [
+                                [Blockly.Msg.MIXLY_1617171138070768_202,"starton"],
+                                [Blockly.Msg.MIXLY_1617171138070768_203,"startoff"],
+                                [Blockly.Msg.MIXLY_1617171138070768_126,"soundoff"],
+                                [Blockly.Msg.MIXLY_1617171138070768_127,"soundon"],
+                                [Blockly.Msg.MIXLY_1617171138070768_128,"openequipment"],
+                                [Blockly.Msg.MIXLY_1617171138070768_129,"closeequipment"],
+                                [Blockly.Msg.MIXLY_1617171138070768_130,"turnon2"],
+                                [Blockly.Msg.MIXLY_1617171138070768_131,"turnoff2"],
+                                [Blockly.Msg.MIXLY_1617171138070768_132,"turnon3"],
+                                [Blockly.Msg.MIXLY_1617171138070768_133,"turnoff3"],
+                                [Blockly.Msg.MIXLY_1617171138070768_134,"turnon4"],
+                                [Blockly.Msg.MIXLY_1617171138070768_135,"turnoff4"],
+                                [Blockly.Msg.MIXLY_1617171138070768_136,"turnon5"],
+                                [Blockly.Msg.MIXLY_1617171138070768_137,"turnoff5"],
+                                [Blockly.Msg.MIXLY_1617171138070768_138,"turnon6"],
+                                [Blockly.Msg.MIXLY_1617171138070768_139,"turnoff6"]
+                                ]
                     }
                 ],
                 "tooltip": "发送指令控制语音模块相关IO动作，输出高电平5V",

@@ -316,7 +316,23 @@ function addMsg (Blockly) {
 		QH_SHIFT_R:'SHIFT_R(>>)',
 		QH_SHIFT_L:'SHIFT_L(<<)',
 		QH_constrain:'Constrain %1 Min %2 Max %3 ',
-		QH_map:'Map %1 From[ %2 , %3 ] To [ %4 , %5 ]'
+		QH_map:'Map %1 From[ %2 , %3 ] To [ %4 , %5 ]',
+		MIXLY_1617171138070768_202 : "Wake up",
+        MIXLY_1617171138070768_203 : "Exit Identification",
+        MIXLY_1617171138070768_126 : "Silent Mode",
+        MIXLY_1617171138070768_127 : "Response Mode",
+        MIXLY_1617171138070768_128 : "Open device/open number 1/start number 1",
+        MIXLY_1617171138070768_129 : "Close Device/Close No.1/Stop No.1",
+        MIXLY_1617171138070768_130 : "Turn on the light/turn on the light/turn on the 2nd/start the 2nd",
+        MIXLY_1617171138070768_131 : "Turn off No. 2/Stop No. 2/Turn off lights/Turn off lights",
+        MIXLY_1617171138070768_132 : "Open No. 3/Open No. 3/Start No. 3",
+        MIXLY_1617171138070768_133 : "Close No. 3/Stop No. 3",
+        MIXLY_1617171138070768_134 : "Open No. 4/Start No. 4",
+        MIXLY_1617171138070768_135 : "Close No. 4/Stop No. 4",
+        MIXLY_1617171138070768_136 : "Open Number 5/Start Number 5",
+        MIXLY_1617171138070768_137 : "Close No. 5/Stop No. 5",
+        MIXLY_1617171138070768_138 : "Open Number 6/Start Number 6",
+        MIXLY_1617171138070768_139 : "Close No. 6/Stop No. 6"
 
     });
     Object.assign(Blockly.ScratchMsgs.locales['zh-cn'], {
@@ -635,7 +651,23 @@ function addMsg (Blockly) {
 		QH_SHIFT_R:'右移(>>)',
 		QH_SHIFT_L:'左移(<<)',
 		QH_constrain:'约束 %1 最小 %2 最大 %3 ',
-		QH_map:'映射 %1 从[ %2 , %3 ] 到 [ %4 , %5 ]'
+		QH_map:'映射 %1 从[ %2 , %3 ] 到 [ %4 , %5 ]',
+		MIXLY_1617171138070768_202 : "唤醒",
+        MIXLY_1617171138070768_203 : "退出识别",
+        MIXLY_1617171138070768_126 : "静音模式",
+        MIXLY_1617171138070768_127 : "回应模式",
+        MIXLY_1617171138070768_128 : "打开设备/打开1号/开始1号",
+        MIXLY_1617171138070768_129 : "关闭设备/关闭1号/停止1号",
+        MIXLY_1617171138070768_130 : "开灯/把灯打开/打开2号/开始2号",
+        MIXLY_1617171138070768_131 : "关闭2号/停止2号/关灯/关闭灯光",
+        MIXLY_1617171138070768_132 : "打开3号/开启3号/开始3号",
+        MIXLY_1617171138070768_133 : "关闭3号/停止3号",
+        MIXLY_1617171138070768_134 : "打开4号/开始4号",
+        MIXLY_1617171138070768_135 : "关闭4号/停止4号",
+        MIXLY_1617171138070768_136 : "打开5号/开始5号",
+        MIXLY_1617171138070768_137 : "关闭5号/停止5号",
+        MIXLY_1617171138070768_138 : "打开6号/开始6号",
+        MIXLY_1617171138070768_139 : "关闭6号/停止6号"
     });
     return Blockly;
 }
