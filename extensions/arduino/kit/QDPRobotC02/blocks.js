@@ -6228,7 +6228,7 @@ function addBlocks (Blockly) {
                 "tooltip": "esp_now接收数据",
                 colour:QH_WIFI_COLOR,
                 colourTertiary: '#C0C0C0',
-                extensions: ['shape_statement']
+                extensions: ['shape_hat']
             });
         }
     };
