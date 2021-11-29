@@ -10349,7 +10349,7 @@ Blockly.Arduino.QDP_esp_now_send = function () {
     Blockly.Arduino.setups_['setup_serial_Serial'] = 'Serial.begin(115200);\n';
     Blockly.Arduino.setups_['setup_serial_open'] = 'WiFi.disconnect();\n';
     Blockly.Arduino.setups_['var_declare_esp_now'] = 'WiFi.mode(WIFI_STA);\n  if (esp_now_init() != 0) {\n    Serial.println("Error initializing ESP-NOW");\n    return;\n  }';
-    var code='esp_now_set_self_role(ESP_NOW_ROLE_CONTROLLER);\nesp_now_register_send_cb(OnDataSent);\nesp_now_add_peer(broadcastAddress'+mac1', ESP_NOW_ROLE_SLAVE, 1, NULL, 0);\nString(' + data + ').toCharArray(myData.a, sizeof(myData.a));\nesp_now_send(broadcastAddress'+mac1', (uint8_t *) &myData, sizeof(myData));\n';
+    var code='esp_now_set_self_role(ESP_NOW_ROLE_CONTROLLER);\nesp_now_register_send_cb(OnDataSent);\nesp_now_add_peer(broadcastAddress'+mac1+', ESP_NOW_ROLE_SLAVE, 1, NULL, 0);\nString(' + data + ').toCharArray(myData.a, sizeof(myData.a));\nesp_now_send(broadcastAddress'+mac1+', (uint8_t *) &myData, sizeof(myData));\n';
     return code;
 };
 
