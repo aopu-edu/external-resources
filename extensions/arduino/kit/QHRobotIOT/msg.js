@@ -902,7 +902,7 @@ function addMsg (Blockly) {
         ON:'开',
         OFF:'关',
         display_TM1637_displayTime:'TM1637 显示时间 %1 %2 时 %3 分 时钟点 设为 %4',
-        ESP8266_oled_init:'OLED 初始化 管脚# %1',
+        ESP8266_oled_init:'OLED 初始化 端口 # %1',
         ESP8266_oled_page:'%1 OLED 刷新页面',
         ESP8266_oled_set_EN_Font:'OLED 设置英文字体 %1 字号 %2 字形 %3',
         ESP8266_oled_print:'OLED 显示文本 起点 X %1 Y %2 内容 %3',
