@@ -10336,6 +10336,7 @@ Blockly.Arduino.QDP_esp_now_send = function () {
     branch = branch.replace(/(^\s*)|(\s*$)/g, "");
     var branch1 = Blockly.Arduino.statementToCode(this, 'failure');
     branch1 = branch1.replace(/(^\s*)|(\s*$)/g, "");
+    var mac1=mac.replace(/\:/g, "").replace(/\"/g, "");
     mac = ':' + mac + '';
     mac = mac.replace(/\"/g, "").replace(/\:/g,",0x");
     mac = ':' + mac + '';
@@ -10343,11 +10344,12 @@ Blockly.Arduino.QDP_esp_now_send = function () {
     Blockly.Arduino.definitions_['include_ESP8266WiFi'] ='#include <ESP8266WiFi.h>';
     Blockly.Arduino.definitions_['include_espnow'] ='#include <espnow.h>';
     Blockly.Arduino.definitions_['include_esp_now'] ='typedef struct struct_message {\n  char a[250];\n} struct_message;\nstruct_message myData;';
-    Blockly.Arduino.definitions_['include_esp_now_send'] ='uint8_t broadcastAddress[] = {' + mac + '};\nvoid OnDataSent(uint8_t *mac_addr, uint8_t sendStatus) {\n  if (sendStatus == 0){\n    ' + branch + '\n  }\n  else{\n    ' + branch1 + '\n  }\n}\n';
-    Blockly.Arduino.setups_['setup_serial_Serial'] = 'Serial.begin(115200);\nWiFi.disconnect();\n';
+    Blockly.Arduino.definitions_['include_esp_now_send'+mac] ='uint8_t broadcastAddress'+mac1+'[] = {' + mac + '};';
+    Blockly.Arduino.definitions_['include_esp_now_OnDataSent'] ='void OnDataSent(uint8_t *mac_addr, uint8_t sendStatus) {\n  if (sendStatus == 0){\n    ' + branch + '\n  }\n  else{\n    ' + branch1 + '\n  }\n}\n';
+    Blockly.Arduino.setups_['setup_serial_Serial'] = 'Serial.begin(115200);\n';
     Blockly.Arduino.setups_['setup_serial_open'] = 'WiFi.disconnect();\n';
     Blockly.Arduino.setups_['var_declare_esp_now'] = 'WiFi.mode(WIFI_STA);\n  if (esp_now_init() != 0) {\n    Serial.println("Error initializing ESP-NOW");\n    return;\n  }';
-    var code='esp_now_set_self_role(ESP_NOW_ROLE_CONTROLLER);\nesp_now_register_send_cb(OnDataSent);\nesp_now_add_peer(broadcastAddress, ESP_NOW_ROLE_SLAVE, 1, NULL, 0);\nString(' + data + ').toCharArray(myData.a, sizeof(myData.a));\nesp_now_send(broadcastAddress, (uint8_t *) &myData, sizeof(myData));\n';
+    var code='esp_now_set_self_role(ESP_NOW_ROLE_CONTROLLER);\nesp_now_register_send_cb(OnDataSent);\nesp_now_add_peer(broadcastAddress'+mac1', ESP_NOW_ROLE_SLAVE, 1, NULL, 0);\nString(' + data + ').toCharArray(myData.a, sizeof(myData.a));\nesp_now_send(broadcastAddress'+mac1', (uint8_t *) &myData, sizeof(myData));\n';
     return code;
 };
 

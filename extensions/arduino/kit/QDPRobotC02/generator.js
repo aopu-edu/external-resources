@@ -10152,6 +10152,7 @@ Blockly.Arduino.qdp_esp32_chaoshengboSerial = function() {
     branch = branch.replace(/(^\s*)|(\s*$)/g, "");
     var branch1 = Blockly.Arduino.statementToCode(this, 'failure');
     branch1 = branch1.replace(/(^\s*)|(\s*$)/g, "");
+    var mac1=mac.replace(/\:/g, "").replace(/\"/g, "");
     mac = ':' + mac + '';
     mac = mac.replace(/\"/g, "").replace(/\:/g,",0x");
     mac = ':' + mac + '';
@@ -10168,7 +10169,7 @@ Blockly.Arduino.qdp_esp32_chaoshengboSerial = function() {
                                                     +'Serial.print(" send status:\t");\n'
                                                     +'Serial.println(status == ESP_NOW_SEND_SUCCESS ? "Delivery Success" : "Delivery Fail");\n'
                                                     +'}\n';
-    Blockly.Arduino.definitions_['include_esp_now_send'+ serial_number] ='uint8_t broadcastAddress' + serial_number + '[] = {' + mac + '};\n';
+    Blockly.Arduino.definitions_['include_esp_now_send'+ mac] ='uint8_t broadcastAddress' + mac1 + '[] = {' + mac + '};\n';
     Blockly.Arduino.setups_['setup_serial_open'] = 'WiFi.disconnect();\n';                                              
     Blockly.Arduino.setups_['var_declare_esp_now'] = 'Serial.begin(115200);\n'
                                                   
@@ -10181,12 +10182,12 @@ Blockly.Arduino.qdp_esp32_chaoshengboSerial = function() {
                                                     +'esp_now_peer_info_t peerInfo;\n'
                                                     +'peerInfo.channel = 0;  \n'
                                                     +'peerInfo.encrypt = false;\n';
-    Blockly.Arduino.setups_['var_declare_esp_now_send'+ serial_number] = 'memcpy(peerInfo.peer_addr, broadcastAddress' + serial_number + ', 6);\n'
+    Blockly.Arduino.setups_['var_declare_esp_now_send'+ mac] = 'memcpy(peerInfo.peer_addr, broadcastAddress' + mac1 + ', 6);\n'
                                                     +'if (esp_now_add_peer(&peerInfo) != ESP_OK){\n'
                                                     +'Serial.println("Failed to add peer");\n'
                                                     +'return;\n'
                                                     +'}';                                                 
-    var code='  String(' + data + ').toCharArray(myData.a, sizeof(myData.a));\nesp_err_t result' + serial_number + ' = esp_now_send(broadcastAddress' + serial_number + ', (uint8_t *) &myData, sizeof(myData));\nif (result' + serial_number + ' == ESP_OK) {\n' + branch + '\n}\nelse {\n' + branch1 + '\n}\n';                                                
+    var code='  String(' + data + ').toCharArray(myData.a, sizeof(myData.a));\nesp_err_t result' + serial_number + ' = esp_now_send(broadcastAddress' + mac1 + ', (uint8_t *) &myData, sizeof(myData));\nif (result' + serial_number + ' == ESP_OK) {\n' + branch + '\n}\nelse {\n' + branch1 + '\n}\n';                                                
     return code;
   };
 
