@@ -3623,14 +3623,14 @@ function addBlocks (Blockly) {
                     {
                         type: 'field_dropdown',
                         name: 'TYPE',
-                        options: [['uint_8',"0"],['uint_8[]',"1"]]
+                        options: [['uint_8',"0"],['uint_8[]',"1"],['string',"2"]]
                     },
                     {
                         type: 'input_value',
                         name: 'TEXT'
                     }
                 ],
-                "tooltip": "板载经典蓝牙。\n读写数据\nuint_8单个写入支持uint8_t变量\nuint_8[]支持uint8_t数组",
+                "tooltip": "板载经典蓝牙。\n读写数据\nuint_8单个写入支持uint8_t变量\nuint_8[]支持uint8_t数组\nstring支持字符串",
                 colour: QH_COMMUNICATE_color4,
                 colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']

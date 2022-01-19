@@ -8709,6 +8709,8 @@ Blockly.Arduino.qdp_esp32_chaoshengboSerial = function() {
     Blockly.Arduino.setups_['setup_serial_BT'] =  'SerialBT.begin("qdprobot-Master", true);';
     if(type == '1')
       var code = 'SerialBT.write('+num+',sizeof('+num+')/sizeof('+num+'[0]));';
+    else if(type == '2')
+    var code = 'SerialBT.write((const uint8_t *)'+num+',sizeof('+num+')/sizeof('+num+'[0]));';
     else
       var code = 'SerialBT.write('+num+');\n';
     
