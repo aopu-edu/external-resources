@@ -8710,7 +8710,7 @@ Blockly.Arduino.qdp_esp32_chaoshengboSerial = function() {
     if(type == '1')
       var code = 'SerialBT.write('+num+',sizeof('+num+')/sizeof('+num+'[0]));';
     else if(type == '2')
-    var code = 'SerialBT.write((const uint8_t *)'+num+',sizeof('+num+')/sizeof('+num+'[0]));';
+    var code = 'SerialBT.write((const uint8_t *)"'+num+'",sizeof("'+num+'")/sizeof("'+num+'"[0]));';
     else
       var code = 'SerialBT.write('+num+');\n';
     
