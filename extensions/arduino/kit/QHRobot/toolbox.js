@@ -410,6 +410,13 @@ function addToolbox () {
             </shadow>
         </value>
     </block> 
+    <block type="qdp_BT_print_string">
+            <value name="TEXT">
+                <shadow type="text">
+                    <field name="TEXT">hello</field>
+                </shadow>
+            </value>
+            </block>
     <label text="%{BKY_QH_SERIAL_LABEL}"></label>  
     <block type="QH_serial_change"></block>
     <block type="QH_serial_jieshouzhi">

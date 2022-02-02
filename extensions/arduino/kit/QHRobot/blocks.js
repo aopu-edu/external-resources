@@ -2542,6 +2542,34 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
             });
         }
     };
+
+     //蓝牙发送字符串
+    Blockly.Blocks.qdp_BT_print_string = {
+        init: function () {
+            this.jsonInit({
+                message0: '%1',
+                message1: Blockly.Msg.qdp_BT_print_string,
+                args0: [
+                    {
+                        type: 'field_image',
+                        src: QH_BLUETOOTH_ICO,
+                        width: 30,
+                        height: 30
+                    }
+                ],
+                args1: [
+                    {
+                        type: 'input_value',
+                        name: 'TEXT'
+                    }
+                ],
+                "tooltip": "发送字符串",
+                colour: QH_COMMUNICATE_color2,
+                colourTertiary: '#C0C0C0',
+                extensions: ['shape_statement']
+            });
+        }
+    };
     //定义串口
     Blockly.Blocks.QH_serial_change = {
         init: function () {

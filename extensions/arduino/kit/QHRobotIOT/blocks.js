@@ -2652,7 +2652,7 @@ function addBlocks (Blockly) {
                         options: [[Blockly.Msg.QH_noPrint, "false"], [Blockly.Msg.QH_Print, "true"]]
                     }                
                 ],
-                "tooltip": "注：内置蓝牙只支持手机蓝牙4.2",
+                "tooltip": "蓝牙模块",
                 colour: QH_COMMUNICATE_color2,
                 colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
@@ -2681,7 +2681,7 @@ function addBlocks (Blockly) {
                         "text": "U"
                     }                                    
                 ],
-                "tooltip": "接收到蓝牙模块在对应APP输入的按键设定字符值（APP发送格式为[,发送的字符.]）,\n在[启用蓝牙接收]后有效",
+                "tooltip": "接收到蓝牙模块在对应APP输入的按键设定字符值（APP发送格式为[,发送的字符.]）,\n在[启用蓝牙]后有效",
                 colour: QH_COMMUNICATE_color2,
                 colourTertiary: '#C0C0C0',
                 extensions: ['output_boolean']
@@ -2710,7 +2710,7 @@ function addBlocks (Blockly) {
                         options: [["1", "1"],["2", "2"],["3", "3"],["4", "4"],["5", "5"]]
                     }                 
                 ],
-                "tooltip": "蓝牙APP上的滑动变量对应值,在[启用蓝牙接收]后有效",
+                "tooltip": "蓝牙APP上的滑动变量对应值,在[启用蓝牙]后有效",
                 colour: QH_COMMUNICATE_color2,
                 colourTertiary: '#C0C0C0',
                 extensions: ['output_number']
@@ -2766,7 +2766,71 @@ function addBlocks (Blockly) {
             });
         }
     };
+ //蓝牙发送字符串
+    Blockly.Blocks.qdp_ESP8266_BT_print_S = {
+        init: function () {
+            this.jsonInit({
+                message0: '%1',
+                message1: Blockly.Msg.qdp_ESP8266_BT_print_S,
+                args0: [
+                    {
+                        type: 'field_image',
+                        src: QH_BLUETOOTH_ICO,
+                        width: 40,
+                        height: 40
+                    }
+                ],
+                args1: [
+                 {
+                        type: 'field_dropdown',
+                        name: 'PIN',
+                        options: QDP_Esp8266_Serial_Port_Pin_Dropdown
+                    },
+                    {
+                        type: 'input_value',
+                        name: 'TEXT'
+                    }
+                    
+                ],
+                "tooltip": " 蓝牙发送字符串",
+                colour: QH_COMMUNICATE_color2,
+                colourTertiary: '#C0C0C0',
+                extensions: ['shape_statement']
+            });
+        }
+    };
 
+    Blockly.Blocks.qdp_ESP8266_BT_print_S = {
+        init: function () {
+            this.jsonInit({
+                message0: '%1',
+                message1: Blockly.Msg.qdp_ESP8266_BT_print_S,
+                args0: [
+                    {
+                        type: 'field_image',
+                        src: QH_BLUETOOTH_ICO,
+                        width: 40,
+                        height: 40
+                    }
+                ],
+                args1: [
+                    {
+                        type: 'field_dropdown',
+                        name: 'PIN',
+                        options: QDP_Esp8266_Serial_Port_Pin_Dropdown
+                    },
+                    {
+                        type: 'input_value',
+                        name: 'TEXT'
+                    }
+                ],
+                "tooltip": " 蓝牙发送字符串",
+                colour: QH_COMMUNICATE_color2,
+                colourTertiary: '#C0C0C0',
+                extensions: ['shape_statement']
+            });
+        }
+    };
     //串口接收的数据等于
     Blockly.Blocks.qdp_ESP8266_serial_jieshouzhi = {
         init: function () {

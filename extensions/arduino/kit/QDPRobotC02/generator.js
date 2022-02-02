@@ -8635,7 +8635,14 @@ Blockly.Arduino.qdp_esp32_chaoshengboSerial = function() {
     var code = "SerialBT.print(String(" + num1 + ")+','+String(" + num2 + ")+','+String(" + num3+ ")+','+String(" + num4 +")+','+String(" + num5 + "));\n";
     return code;
   };
+//蓝牙发送字符串
 
+Blockly.Arduino.qdp_esp32_BT_print_string = function() {
+   var TEXT = Blockly.Arduino.valueToCode(this, 'TEXT',Blockly.Arduino.ORDER_ATOMIC) ||'0' ;
+  
+  var code = "SerialBT.print(String(" + TEXT + "));\n";
+  return code;
+  };
   //蓝牙Master连接
   Blockly.Arduino.qdp_esp32_BT_MASTER_CONNECT = function() {
     var type = this.getFieldValue('TYPE');
@@ -10093,6 +10100,8 @@ Blockly.Arduino.qdp_esp32_chaoshengboSerial = function() {
 
   //WIFI MAC
   Blockly.Arduino.QDP32_mac_address = function () {
+    Blockly.Arduino.definitions_['include_ESP_WIFI'] = '#include <WiFi.h>';    //加了这一行
+    Blockly.Arduino.setups_['wifi_mac_setup'] = 'WiFi.mode(WIFI_MODE_STA);\n';
     var code='WiFi.macAddress()';
     return [code, Blockly.Arduino.ORDER_ATOMIC];
   };

@@ -490,6 +490,13 @@ function addToolbox () {
             </shadow>
         </value>
     </block>
+    <block type="qdp_ESP8266_BT_print_S">
+            <value name="TEXT">
+                <shadow type="text">
+                    <field name="TEXT">hello</field>
+                </shadow>
+            </value>
+            </block>
     <label text="%{BKY_QH_SERIAL_LABEL}"></label>
     <block type="serialPrint">
         <value name="VALUE">

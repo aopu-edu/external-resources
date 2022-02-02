@@ -8393,9 +8393,17 @@ function addGenerator (Blockly) {
         var num3 = Blockly.Arduino.valueToCode(this, 'N3',Blockly.Arduino.ORDER_ATOMIC) ||'0' ;
         var num4 = Blockly.Arduino.valueToCode(this, 'N4',Blockly.Arduino.ORDER_ATOMIC) ||'0' ;
         var num5 = Blockly.Arduino.valueToCode(this, 'N5',Blockly.Arduino.ORDER_ATOMIC) ||'0' ;
-        var code = "Serial.print(String(" + num1 + ")+','+String(" + num2 + ")+','+String(" + num3+ ")+','+String(" + num4 +")+','+String(" + num5 + "));";
+        var code = "Serial.print(String(" + num1 + ")+','+String(" + num2 + ")+','+String(" + num3+ ")+','+String(" + num4 +")+','+String(" + num5 + "));\n";
         return code;
     };
+     //蓝牙发送字符串
+
+Blockly.Arduino.qdp_BT_print_string = function() {
+   var TEXT = Blockly.Arduino.valueToCode(this, 'TEXT',Blockly.Arduino.ORDER_ATOMIC) ||'0' ;
+  
+  var code = "Serial.print(String(" + TEXT + "));\n";
+  return code;
+  };
     //更改串口定义
     Blockly.Arduino.QH_serial_change = function() {
         var dropdown_pin = this.getFieldValue('pinn');

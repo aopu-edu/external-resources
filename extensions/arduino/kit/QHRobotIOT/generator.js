@@ -8429,7 +8429,15 @@ Blockly.Arduino.qdp_ESP8266_BT_print = function() {
   
   return code;
 };
+//蓝牙发送字符串
 
+Blockly.Arduino.qdp_ESP8266_BT_print_S = function() {
+  var PIN = this.getFieldValue('PIN');
+   var TEXT = Blockly.Arduino.valueToCode(this, 'TEXT',Blockly.Arduino.ORDER_ATOMIC) ||'0' ;
+  
+  var code = "swSer"+PIN+".print(String(" + TEXT + "));\n";
+  return code;
+  };
   //串口接收的数据等于
 
 Blockly.Arduino.qdp_ESP8266_serial_jieshouzhi = function() {
