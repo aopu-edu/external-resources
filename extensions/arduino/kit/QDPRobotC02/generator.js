@@ -10181,10 +10181,9 @@ Blockly.Arduino.qdp_esp32_BT_print_string = function() {
                                                     +'Serial.println(status == ESP_NOW_SEND_SUCCESS ? "Delivery Success" : "Delivery Fail");\n'
                                                     +'}\n';
     Blockly.Arduino.definitions_['include_esp_now_send'+ mac] ='uint8_t broadcastAddress' + mac1 + '[] = {' + mac + '};\n';
-    Blockly.Arduino.setups_['setup_serial_open'] = 'WiFi.disconnect();\n';                                              
-    Blockly.Arduino.setups_['var_declare_esp_now'] = 'Serial.begin(115200);\n'
-                                                  
-                                                    +'WiFi.mode(WIFI_STA);\n'
+    Blockly.Arduino.setups_['setup_serial_open'] = 'WiFi.disconnect();\n';     
+    Blockly.Arduino.setups_['setup_qdprobot_serial'] = 'Serial.begin(9600);\n';                                         
+    Blockly.Arduino.setups_['var_declare_esp_now'] ='WiFi.mode(WIFI_STA);\n'
                                                     +'if (esp_now_init() != ESP_OK) {\n'
                                                     +'Serial.println("Error initializing ESP-NOW");\n'
                                                     +'return;\n'
