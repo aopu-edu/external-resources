@@ -10062,12 +10062,26 @@ Blockly.Arduino.qdp_BT_print_string = function() {
         code = name;
         return [code, Blockly.Arduino.ORDER_NONE];
     };
+    //字符串
+    Blockly.Arduino.QH_string = function() {
+        var name = Blockly.Arduino.valueToCode(this, 'VAR',Blockly.Arduino.ORDER_ATOMIC) ||' ' ;
+        code = 'String('+name+')';
+        return [code, Blockly.Arduino.ORDER_NONE];
+    };
+
+    //字符
+    Blockly.Arduino.QH_char = function() {
+        var name = Blockly.Arduino.valueToCode(this, 'VAR',Blockly.Arduino.ORDER_ATOMIC) ||' ' ;
+        name = name.replace(/\"/g,'');
+        code = '\''+name+'\'';
+        return [code, Blockly.Arduino.ORDER_NONE];
+    };
     //变量set
     Blockly.Arduino.QH_variables_set = function() {
         var name = Blockly.Arduino.valueToCode(this, 'VAR',Blockly.Arduino.ORDER_ATOMIC) ||' ' ;
         name = name.replace(/\"/g,'');
         var value = Blockly.Arduino.valueToCode(this, 'VALUE',Blockly.Arduino.ORDER_ATOMIC) ||' ' ;
-        value = value.replace(/\"/g,'');
+        //value = value.replace(/\"/g,'');
         code = name+'\='+value+';\n';
         return code;
     };

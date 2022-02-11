@@ -10477,7 +10477,7 @@ Blockly.Arduino.qdp_timer = function () {
     //字符串
     Blockly.Arduino.QH_string = function() {
         var name = Blockly.Arduino.valueToCode(this, 'VAR',Blockly.Arduino.ORDER_ATOMIC) ||' ' ;
-        code = name;
+        code = 'String('+name+')';
         return [code, Blockly.Arduino.ORDER_NONE];
     };
 
@@ -10495,7 +10495,7 @@ Blockly.Arduino.qdp_timer = function () {
         var name = Blockly.Arduino.valueToCode(this, 'VAR',Blockly.Arduino.ORDER_ATOMIC) ||' ' ;
         name = name.replace(/\"/g,'');
         var value = Blockly.Arduino.valueToCode(this, 'VALUE',Blockly.Arduino.ORDER_ATOMIC) ||' ' ;
-        value = value.replace(/\"/g,'');
+       // value = value.replace(/\"/g,'');
         code = name+'\='+value+';\n';
         return code;
     };

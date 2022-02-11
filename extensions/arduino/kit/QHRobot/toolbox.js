@@ -1364,6 +1364,20 @@ function addToolbox () {
             </shadow>
         </value>
     </block>
+    <block type="QH_string">
+        <value name="VAR">
+            <shadow type="text">
+                <field name="TEXT">text</field>
+            </shadow>
+        </value>
+    </block>
+    <block type="QH_char">
+        <value name="VAR">
+            <shadow type="text">
+                <field name="TEXT">A</field>
+            </shadow>
+        </value>
+    </block>
     <block type="QH_variables_set">
         <value name="VAR">
             <shadow type="text">

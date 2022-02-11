@@ -1530,7 +1530,7 @@ function addToolbox () {
     <block type="QH_char">
         <value name="VAR">
             <shadow type="text">
-                <field name="TEXT">text</field>
+                <field name="TEXT">A</field>
             </shadow>
         </value>
     </block>

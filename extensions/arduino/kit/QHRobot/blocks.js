@@ -5160,6 +5160,42 @@ const QH_smgxs=[["auto", "auto"],["1", "1"],["2", "2"],["3", "3"]];
             });
         }     
     };
+    //字符串
+    Blockly.Blocks.QH_string = {
+        init: function () {
+            this.jsonInit({
+                message0: '“ %1 ”',
+                args0: [
+                    {
+                        type: 'input_value',
+                        name: 'VAR'
+                    } 
+                ],
+                "tooltip": "字符串",
+                colour:QH_OTHER_COLOR,
+                colourTertiary: '#C0C0C0',
+                extensions: ['output_number']
+            });
+        }     
+    };
+    //字符
+    Blockly.Blocks.QH_char = {
+        init: function () {
+            this.jsonInit({
+                message0: '‘ %1 ’',
+                args0: [
+                    {
+                        type: 'input_value',
+                        name: 'VAR'
+                    } 
+                ],
+                "tooltip": "字符",
+                colour:QH_OTHER_COLOR,
+                colourTertiary: '#C0C0C0',
+                extensions: ['output_number']
+            });
+        }     
+    };
     //变量set
     Blockly.Blocks.QH_variables_set = {
         init: function () {
