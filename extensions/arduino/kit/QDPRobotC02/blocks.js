@@ -6233,6 +6233,7 @@ function addBlocks (Blockly) {
         }
     };
 
+    
      //esp_now接收数据
     Blockly.Blocks.QDP32_esp_now_receive = {
         init: function () {
@@ -6250,7 +6251,7 @@ function addBlocks (Blockly) {
                     },
                     {
                       type: "input_statement",
-                      name: "success"
+                      name: "receive_data"
                     }
                 ],
                 "tooltip": "esp_now接收数据",
@@ -7123,7 +7124,29 @@ function addBlocks (Blockly) {
             });
         }
     };
-
+ //串口打印
+    Blockly.Blocks.serialPrint = {
+        init: function () {
+            this.jsonInit({
+                message0: Blockly.Msg.serialPrint,
+                args0: [
+                    {
+                        type: 'field_dropdown',
+                        name: 'type',
+                        options:[[(Blockly.Msg.println),"println"], [(Blockly.Msg.print),"print"]]
+                    },
+                    {
+                        type: 'input_value',
+                        name: 'VALUE'
+                    }
+                ],
+                "tooltip": "串口打印",
+                colour:QH_COMMUNICATE_color1,
+                colourTertiary: '#C0C0C0',
+                extensions: ['shape_statement']
+            });
+        }
+    };
 
 
     return Blockly;

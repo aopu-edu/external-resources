@@ -13075,6 +13075,15 @@ Blockly.Arduino.type_conversion = function() {
   var code = ''+ type+'('+ variable+')';
   return [code, Blockly.Arduino.ORDER_ATOMIC];
 };
+//串口打印
+Blockly.Arduino.serialPrint = function() {
+  var type = this.getFieldValue('type');
+  var VALUE = Blockly.Arduino.valueToCode(this, 'VALUE', Blockly.Arduino.ORDER_ATOMIC);
+  Blockly.Arduino.setups_['setup_qdprobot_serial']= 'Serial.begin(9600);\n';
+  var code='Serial.'+type+'('+VALUE+');\n';
+  return code;
+};
+
 
 
 

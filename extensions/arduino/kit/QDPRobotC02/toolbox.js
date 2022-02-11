@@ -650,6 +650,13 @@ function addToolbox () {
         </value>
     </block>
     <label text="%{BKY_QH_SERIAL_LABEL}"></label>  
+    <block type="serialPrint">
+        <value name="VALUE">
+           <shadow type="text">
+                <field name="TEXT">2</field>
+            </shadow>
+        </value>
+    </block>
     <block type="qdp_esp32_serial_jieshouzhi">
         <value name="text">
             <shadow type="text">
@@ -1435,7 +1442,21 @@ function addToolbox () {
 	        </shadow>
 	    </value>
     </block>
-    <block type="QDP32_esp_now_receive"></block>
+    <block type="QDP32_esp_now_receive">
+        <statement name="receive_data">
+            <block type="serialPrint">
+                <value name="VALUE">
+                        <block type="QH_variables_get">
+                            <value name="VAR">
+                                <shadow type="text">
+                                    <field name="TEXT">mydata</field>
+                                </shadow>
+                            </value>
+                        </block>
+                    </value>
+            </block> 
+        </statement>
+    </block>
     <label text="%{BKY_QH_WEATHER_LABEL}"></label>
     <block type="qdpWeatherGet">
     	<value name="data">
