@@ -10201,7 +10201,7 @@ Blockly.Arduino.qdp_esp32_BT_print_string = function() {
     return code;
   };
 
-  //esp_now接收数据
+ //esp_now接收数据
   Blockly.Arduino.QDP32_esp_now_receive = function () {
     var branch = Blockly.Arduino.statementToCode(this, 'success');
     branch = branch.replace(/(^\s*)|(\s*$)/g, "");
@@ -10209,7 +10209,7 @@ Blockly.Arduino.qdp_esp32_BT_print_string = function() {
     Blockly.Arduino.definitions_['include_WiFi'] ='#include <WiFi.h>';
     Blockly.Arduino.definitions_['var_declare_struct_message'] ='typedef struct struct_message {\n  char a[250];\n} struct_message;\nstruct_message myData;\n';
     Blockly.Arduino.definitions_['var_declare_function_OnDataRecv'] ='void OnDataRecv(const uint8_t * mac, const uint8_t *incomingData, int len) {\n  memcpy(&myData, incomingData, sizeof(myData));\n String mydata = String(myData.a);\n  vTaskDelay(1);\n' + branch + '\n}\n';
-    Blockly.Arduino.setups_['setup_serial_open'] = 'WiFi.disconnect();\n';
+    //Blockly.Arduino.setups_['setup_serial_open'] = 'WiFi.disconnect();\n';
     Blockly.Arduino.setups_['setups_WiFi.mode'] = 'WiFi.mode(WIFI_STA);\n esp_now_init();';
     Blockly.Arduino.setups_['setups_esp_now_register_recv_cb'] = 'esp_now_register_recv_cb(OnDataRecv);\n';
     var code='';
