@@ -6251,7 +6251,7 @@ function addBlocks (Blockly) {
                     },
                     {
                       type: "input_statement",
-                      name: "receive_data"
+                      name: "success"
                     }
                 ],
                 "tooltip": "esp_now接收数据",

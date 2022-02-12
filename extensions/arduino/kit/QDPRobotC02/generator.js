@@ -10203,7 +10203,7 @@ Blockly.Arduino.qdp_esp32_BT_print_string = function() {
 
   //esp_now接收数据
   Blockly.Arduino.QDP32_esp_now_receive = function () {
-    var branch = Blockly.Arduino.statementToCode(this, 'receive_data');
+    var branch = Blockly.Arduino.statementToCode(this, 'success');
     branch = branch.replace(/(^\s*)|(\s*$)/g, "");
     Blockly.Arduino.definitions_['include_esp_now'] ='#include <esp_now.h>';
     Blockly.Arduino.definitions_['include_WiFi'] ='#include <WiFi.h>';

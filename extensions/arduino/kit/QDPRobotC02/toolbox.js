@@ -1443,7 +1443,7 @@ function addToolbox () {
 	    </value>
     </block>
     <block type="QDP32_esp_now_receive">
-        <statement name="receive_data">
+        <statement name="success">
             <block type="serialPrint">
                 <value name="VALUE">
                         <block type="QH_variables_get">
