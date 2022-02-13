@@ -8703,7 +8703,7 @@ Blockly.Arduino.qdp_esp32_BT_print_string = function() {
   Blockly.Arduino.qdp_esp32_BT_MASTER_READ = function() {
     Blockly.Arduino.definitions_['var_declare_BluetoothSerial'] = '#include "BluetoothSerial.h"\nBluetoothSerial SerialBT;';
     Blockly.Arduino.setups_['setup_serial_BT'] =  'SerialBT.begin("qdprobot-Master", true);';
-    var code = 'SerialBT.read()';
+    var code = 'char(SerialBT.read())';
     return [code, Blockly.Arduino.ORDER_ATOMIC];
   };
 

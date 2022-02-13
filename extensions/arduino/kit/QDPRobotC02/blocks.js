@@ -3625,7 +3625,7 @@ function addBlocks (Blockly) {
         init: function () {
             this.jsonInit({
                 message0: Blockly.Msg.qdp_esp32_BT_MASTER_READ,
-                "tooltip": "板载经典蓝牙。\n读取蓝牙接收缓存内的一个字节数据.返回int类型",
+                "tooltip": "板载经典蓝牙。\n读取蓝牙接收缓存内的一个字节数据.返回字符串char类型",
                 colour: QH_COMMUNICATE_color4,
                 colourTertiary: '#C0C0C0',
                 extensions: ['output_number']
