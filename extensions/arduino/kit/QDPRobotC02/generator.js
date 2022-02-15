@@ -8819,8 +8819,8 @@ Blockly.Arduino.qdp_esp32_BT_print_string = function() {
     var model = parseInt(this.getFieldValue('model'));
 
     var KeyValue = Blockly.Arduino.valueToCode(this, 'KeyValue',Blockly.Arduino.ORDER_ATOMIC) || '0';
-    KeyValue = KeyValue.replace(/\"/g,'');
-    KeyValue = '\''+KeyValue+'\''
+    //KeyValue = KeyValue.replace(/\"/g,'');
+    //KeyValue = '\''+KeyValue+'\''
     var code = '';
     switch(model){
       case 1:

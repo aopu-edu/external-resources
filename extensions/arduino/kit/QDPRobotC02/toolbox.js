@@ -700,14 +700,18 @@ function addToolbox () {
     </block>
     <block type="esp32_BleKeyboard_isConnected" ></block>
     <block type="esp32_BleKeyboard_KeyValue" ></block>
-    <block type="esp32_BleKeyboard_write_press" >
-        <field name="model">0</field>
-        <value name="KeyValue">
+     <block type="esp32_BleKeyboard_write_press" >
+            <field name="model">0</field>
+            <value name="KeyValue">
+                <block type="QH_string">
+        <value name="VAR">
             <shadow type="text">
-                <field name="TEXT">a</field>
+                <field name="TEXT">A</field>
             </shadow>
         </value>
     </block>
+            </value>
+        </block>
 </category>
 <category name="%{BKY_QH_MP3_CATEGORY}" id="QH_MP3_CATEGORY" colour="#42CCFF" secondaryColour="#42CCFF" iconURI="${QH_MP3_ICO}">
 	<block type="esp32_Mp3_init"></block>
