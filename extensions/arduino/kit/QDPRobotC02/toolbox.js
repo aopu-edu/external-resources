@@ -703,15 +703,15 @@ function addToolbox () {
      <block type="esp32_BleKeyboard_write_press" >
             <field name="model">0</field>
             <value name="KeyValue">
-                <block type="QH_string">
+        <block type="QH_char">
         <value name="VAR">
             <shadow type="text">
-                <field name="TEXT">A</field>
+                <field name="TEXT">a</field>
             </shadow>
         </value>
     </block>
-            </value>
-        </block>
+   </value>
+ </block>
 </category>
 <category name="%{BKY_QH_MP3_CATEGORY}" id="QH_MP3_CATEGORY" colour="#42CCFF" secondaryColour="#42CCFF" iconURI="${QH_MP3_ICO}">
 	<block type="esp32_Mp3_init"></block>
