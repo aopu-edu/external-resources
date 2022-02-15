@@ -3947,7 +3947,7 @@ function addBlocks (Blockly) {
                         name: 'KeyValue'
                     }             
                 ],
-                "tooltip": "蓝牙键盘动作",
+                "tooltip": "蓝牙键盘动作,单字节为键盘动作，多字符串时为“打印”输出",
                 colour: QH_COMMUNICATE_color4,
                 colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
