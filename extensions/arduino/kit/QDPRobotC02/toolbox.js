@@ -579,7 +579,7 @@ function addToolbox () {
     <block type="qdp_esp32_BT_START">
         <value name="VALUE">
             <shadow type="text">
-                <field name="TEXT">QDPRobotBT</field>
+                <field name="TEXT">qdprobot</field>
             </shadow>
         </value>
     </block>
