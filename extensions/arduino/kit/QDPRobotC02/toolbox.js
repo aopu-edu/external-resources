@@ -254,6 +254,7 @@ function addToolbox () {
         </value>
     </block>
     <block type="QDP_inout_esp32_touchEvents"></block>
+    <block type="QDP_ESP32_hallRead"></block>
     <label text="%{BKY_QH_BUTTON_LABEL}"></label>
     <block type="qdp_esp32_buttonl"></block>
     <block type="qdp_esp32_buttonx"></block>
