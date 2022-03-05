@@ -254,7 +254,6 @@ function addToolbox () {
         </value>
     </block>
     <block type="QDP_inout_esp32_touchEvents"></block>
-    <block type="QDP_ESP32_hallRead"></block>
     <label text="%{BKY_QH_BUTTON_LABEL}"></label>
     <block type="qdp_esp32_buttonl"></block>
     <block type="qdp_esp32_buttonx"></block>
@@ -548,8 +547,8 @@ function addToolbox () {
     <block type="qdp_ESP32_ir_recv_raw"></block>
     <block type="qdp_esp32_ir_send_nec">
         <value name="data">
-            <shadow type="math_number">
-                <field name="NUM">0xCF</field>
+            <shadow type="text">
+                <field name="TEXT">0xCF</field>
             </shadow>
         </value>
         <value name="bits">
@@ -579,7 +578,7 @@ function addToolbox () {
     <block type="qdp_esp32_BT_START">
         <value name="VALUE">
             <shadow type="text">
-                <field name="TEXT">qdprobot</field>
+                <field name="TEXT">QDPRobotBT</field>
             </shadow>
         </value>
     </block>

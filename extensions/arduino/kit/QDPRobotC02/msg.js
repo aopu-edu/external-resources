@@ -581,7 +581,7 @@ function addMsg (Blockly) {
         qdp_esp32_ir_re2:'红外遥控 RC5 端口 %1 按键 %2 模式 %3',
         QH_IrPress:'按下',
         QH_IrPressOn:'按住',
-        qdp_ESP32_ir_recv_raw:'红外接收转码 端口 %1',
+        qdp_ESP32_ir_recv_raw:'红外接收解码 端口 %1',
         qdp_esp32_ir_send_nec:'红外发射 %1 端口 %2 数值 %3',
         QDP_esp32_ir_send_raw:'红外发射 端口  %1  %2 数组 %3 数组长度 %4 频率 %5',
         qdp_esp32_BT_START:'启用蓝牙 名称 %1 %2',

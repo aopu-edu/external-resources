@@ -8567,7 +8567,9 @@ Blockly.Arduino.qdp_esp32_chaoshengboSerial = function() {
 
   //红外发送
   Blockly.Arduino.qdp_esp32_ir_send_nec = function() {
+    //var data = Blockly.Arduino.valueToCode(this, 'data',Blockly.Arduino.ORDER_ATOMIC) || '0';
     var data = Blockly.Arduino.valueToCode(this, 'data',Blockly.Arduino.ORDER_ATOMIC) || '0';
+        data = data.replace(/\"/g,'')
     var type = this.getFieldValue('TYPE');
     var PIN = this.getFieldValue('PIN');
     Blockly.Arduino.definitions_['define_QDPEsp32Port'] = '#include <QDPEsp32Port.h>';

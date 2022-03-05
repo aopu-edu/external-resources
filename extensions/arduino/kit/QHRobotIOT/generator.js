@@ -8313,6 +8313,7 @@ Blockly.Arduino.qdp_ESP8266_ir_re2 = function() {
 //红外发送
 Blockly.Arduino.qdp_ESP8266_ir_send_nec = function() {
   var data = Blockly.Arduino.valueToCode(this, 'data',Blockly.Arduino.ORDER_ATOMIC) || '0';
+        data = data.replace(/\"/g,'')
   var type = this.getFieldValue('TYPE');
   var PIN = this.getFieldValue('PIN');
   Blockly.Arduino.definitions_['define_QDPEsp8266Port'] = '#include <QDPEsp8266Port.h>';
