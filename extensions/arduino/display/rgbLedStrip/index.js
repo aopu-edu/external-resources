@@ -6,8 +6,7 @@ const rgbLedStrip = formatMessage => ({
     extensionId: 'rgbLedStrip',
     version: '1.0.0',
     supportDevice: ['arduinoUno', 'arduinoNano', 'arduinoMini', 'arduinoLeonardo',
-        'arduinoMega2560', 'arduinoEsp8266', 'arduinoEsp32','QDPRobot_arduinoUnoUltra',
-    'QDPRobotC02_arduinoESP32QDP', 'QDPRobotIOT_arduinoEsp8266'],
+        'arduinoMega2560', 'arduinoEsp8266', 'arduinoEsp32'],
     author: 'ArthurZheng',
     iconURL: `asset/rgbLedStrip.png`,
     description: formatMessage({
@@ -20,6 +19,7 @@ const rgbLedStrip = formatMessage => ({
     toolbox: 'toolbox.js',
     msg: 'msg.js',
     library: 'lib',
+    official: true,
     tags: ['display'],
     helpLink: 'https://openblockcc.gitee.io/wiki/main'
 });

@@ -210,7 +210,6 @@ function addToolbox () {
             </shadow>
         </value>
     </block>
-
     <block type="QDP_esp32_display_samll_SBCDC" name="显示带底色文本">
         <value name="QDP_display_samll_sbcdc_colou2">
             <shadow type="math_number">

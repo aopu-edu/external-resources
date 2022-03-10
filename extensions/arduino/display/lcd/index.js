@@ -20,6 +20,7 @@ const lcd = formatMessage => ({
     toolbox: 'toolbox.js',
     msg: 'msg.js',
     library: 'lib',
+    official: true,
     tags: ['display'],
     helpLink: 'https://openblockcc.gitee.io/wiki/main'
 });

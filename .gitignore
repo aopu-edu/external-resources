@@ -3,3 +3,7 @@
 
 # Editor
 .vscode
+
+# Build files
+translations/
+

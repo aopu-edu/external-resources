@@ -5,9 +5,7 @@ const cooperativeScheduler = formatMessage => ({
     }),
     extensionId: 'cooperativeScheduler',
     version: '1.0.0',
-    supportDevice: ['arduinoUno', 'arduinoNano', 'arduinoMini', 'arduinoLeonardo',
-        'arduinoMega2560', 'arduinoEsp32', 'arduinoEsp8266','QDPRobot_arduinoUnoUltra',
-    'QDPRobotC02_arduinoESP32QDP', 'QDPRobotIOT_arduinoEsp8266'],
+    supportDevice: ['arduinoUno', 'arduinoNano', 'arduinoLeonardo', 'arduinoMega2560','QDPRobot_arduinoUnoUltra'],
     author: 'ArthurZheng',
     iconURL: `asset/cooperativeScheduler.png`,
     description: formatMessage({
@@ -20,6 +18,7 @@ const cooperativeScheduler = formatMessage => ({
     toolbox: 'toolbox.js',
     msg: 'msg.js',
     library: 'lib',
+    official: true,
     tags: ['other'],
     helpLink: 'https://openblockcc.gitee.io/wiki/main'
 });

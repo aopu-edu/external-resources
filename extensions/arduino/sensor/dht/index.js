@@ -1,7 +1,7 @@
 const dht = formatMessage => ({
     name: formatMessage({
         id: 'dht.name',
-        default: 'DHT sensor'
+        default: 'DHT Sensor'
     }),
     extensionId: 'dht',
     version: '1.0.0',
@@ -20,6 +20,7 @@ const dht = formatMessage => ({
     toolbox: 'toolbox.js',
     msg: 'msg.js',
     library: 'lib',
+    official: true,
     tags: ['sensor'],
     helpLink: 'https://openblockcc.gitee.io/wiki/main'
 });

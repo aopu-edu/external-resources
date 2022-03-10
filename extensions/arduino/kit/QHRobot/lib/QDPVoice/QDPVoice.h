@@ -22,7 +22,6 @@ void VoiceSendData(uint8_t addr,uint8_t pin){
 	digitalWrite(pin, HIGH);
 }
 
-
 template<typename F>
 void VoicePlayValue(F f,uint8_t pin) {
   //转化字符串
