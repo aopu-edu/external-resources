@@ -27,7 +27,7 @@ jobs:
           npm install
           npm link
 
-      - name: resource-cli Install
+      - name: external-resources Install
         uses: actions/checkout@v2
         with:
           repository: aopu-edu/external-resources
