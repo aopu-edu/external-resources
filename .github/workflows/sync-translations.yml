@@ -2,7 +2,7 @@ name: Sync Translations
 
 on:
   push:
-    branches: [ main ]
+    branches: [ qdp ]
     paths-ignore:
       - 'README.md'
   schedule:
