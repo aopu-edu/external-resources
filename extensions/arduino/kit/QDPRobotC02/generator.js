@@ -8567,7 +8567,9 @@ Blockly.Arduino.qdp_esp32_chaoshengboSerial = function() {
 
   //红外发送
   Blockly.Arduino.qdp_esp32_ir_send_nec = function() {
+    //var data = Blockly.Arduino.valueToCode(this, 'data',Blockly.Arduino.ORDER_ATOMIC) || '0';
     var data = Blockly.Arduino.valueToCode(this, 'data',Blockly.Arduino.ORDER_ATOMIC) || '0';
+        data = data.replace(/\"/g,'')
     var type = this.getFieldValue('TYPE');
     var PIN = this.getFieldValue('PIN');
     Blockly.Arduino.definitions_['define_QDPEsp32Port'] = '#include <QDPEsp32Port.h>';
@@ -8703,7 +8705,7 @@ Blockly.Arduino.qdp_esp32_BT_print_string = function() {
   Blockly.Arduino.qdp_esp32_BT_MASTER_READ = function() {
     Blockly.Arduino.definitions_['var_declare_BluetoothSerial'] = '#include "BluetoothSerial.h"\nBluetoothSerial SerialBT;';
     Blockly.Arduino.setups_['setup_serial_BT'] =  'SerialBT.begin("qdprobot-Master", true);';
-    var code = 'SerialBT.read()';
+    var code = 'char(SerialBT.read())';
     return [code, Blockly.Arduino.ORDER_ATOMIC];
   };
 
@@ -8819,8 +8821,8 @@ Blockly.Arduino.qdp_esp32_BT_print_string = function() {
     var model = parseInt(this.getFieldValue('model'));
 
     var KeyValue = Blockly.Arduino.valueToCode(this, 'KeyValue',Blockly.Arduino.ORDER_ATOMIC) || '0';
-    KeyValue = KeyValue.replace(/\"/g,'');
-    KeyValue = '\''+KeyValue+'\''
+    //KeyValue = KeyValue.replace(/\"/g,'');
+    //KeyValue = '\''+KeyValue+'\''
     var code = '';
     switch(model){
       case 1:
@@ -10180,10 +10182,9 @@ Blockly.Arduino.qdp_esp32_BT_print_string = function() {
                                                     +'Serial.println(status == ESP_NOW_SEND_SUCCESS ? "Delivery Success" : "Delivery Fail");\n'
                                                     +'}\n';
     Blockly.Arduino.definitions_['include_esp_now_send'+ mac] ='uint8_t broadcastAddress' + mac1 + '[] = {' + mac + '};\n';
-    Blockly.Arduino.setups_['setup_serial_open'] = 'WiFi.disconnect();\n';                                              
-    Blockly.Arduino.setups_['var_declare_esp_now'] = 'Serial.begin(115200);\n'
-                                                  
-                                                    +'WiFi.mode(WIFI_STA);\n'
+    Blockly.Arduino.setups_['setup_serial_open'] = 'WiFi.disconnect();\n';     
+    Blockly.Arduino.setups_['setup_qdprobot_serial'] = 'Serial.begin(9600);\n';                                         
+    Blockly.Arduino.setups_['var_declare_esp_now'] ='WiFi.mode(WIFI_STA);\n'
                                                     +'if (esp_now_init() != ESP_OK) {\n'
                                                     +'Serial.println("Error initializing ESP-NOW");\n'
                                                     +'return;\n'
@@ -10201,15 +10202,15 @@ Blockly.Arduino.qdp_esp32_BT_print_string = function() {
     return code;
   };
 
-  //esp_now接收数据
+ //esp_now接收数据
   Blockly.Arduino.QDP32_esp_now_receive = function () {
-    var branch = Blockly.Arduino.statementToCode(this, 'receive_data');
+    var branch = Blockly.Arduino.statementToCode(this, 'success');
     branch = branch.replace(/(^\s*)|(\s*$)/g, "");
     Blockly.Arduino.definitions_['include_esp_now'] ='#include <esp_now.h>';
     Blockly.Arduino.definitions_['include_WiFi'] ='#include <WiFi.h>';
     Blockly.Arduino.definitions_['var_declare_struct_message'] ='typedef struct struct_message {\n  char a[250];\n} struct_message;\nstruct_message myData;\n';
     Blockly.Arduino.definitions_['var_declare_function_OnDataRecv'] ='void OnDataRecv(const uint8_t * mac, const uint8_t *incomingData, int len) {\n  memcpy(&myData, incomingData, sizeof(myData));\n String mydata = String(myData.a);\n  vTaskDelay(1);\n' + branch + '\n}\n';
-    Blockly.Arduino.setups_['setup_serial_open'] = 'WiFi.disconnect();\n';
+    //Blockly.Arduino.setups_['setup_serial_open'] = 'WiFi.disconnect();\n';
     Blockly.Arduino.setups_['setups_WiFi.mode'] = 'WiFi.mode(WIFI_STA);\n esp_now_init();';
     Blockly.Arduino.setups_['setups_esp_now_register_recv_cb'] = 'esp_now_register_recv_cb(OnDataRecv);\n';
     var code='';
@@ -12883,7 +12884,7 @@ Blockly.Arduino.qdp_esp32_BT_print_string = function() {
     //字符串
     Blockly.Arduino.QH_string = function() {
         var name = Blockly.Arduino.valueToCode(this, 'VAR',Blockly.Arduino.ORDER_ATOMIC) ||' ' ;
-        code = name;
+        code = 'String('+name+')';
         return [code, Blockly.Arduino.ORDER_NONE];
     };
 
@@ -12901,7 +12902,7 @@ Blockly.Arduino.qdp_esp32_BT_print_string = function() {
         var name = Blockly.Arduino.valueToCode(this, 'VAR',Blockly.Arduino.ORDER_ATOMIC) ||' ' ;
         name = name.replace(/\"/g,'');
         var value = Blockly.Arduino.valueToCode(this, 'VALUE',Blockly.Arduino.ORDER_ATOMIC) ||' ' ;
-        value = value.replace(/\"/g,'');
+        //value = value.replace(/\"/g,'');
         code = name+'\='+value+';\n';
         return code;
     };
@@ -13075,6 +13076,15 @@ Blockly.Arduino.type_conversion = function() {
   var code = ''+ type+'('+ variable+')';
   return [code, Blockly.Arduino.ORDER_ATOMIC];
 };
+//串口打印
+Blockly.Arduino.serialPrint = function() {
+  var type = this.getFieldValue('type');
+  var VALUE = Blockly.Arduino.valueToCode(this, 'VALUE', Blockly.Arduino.ORDER_ATOMIC);
+  Blockly.Arduino.setups_['setup_qdprobot_serial']= 'Serial.begin(9600);\n';
+  var code='Serial.'+type+'('+VALUE+');\n';
+  return code;
+};
+
 
 
 

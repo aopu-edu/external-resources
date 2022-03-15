@@ -419,8 +419,8 @@ function addToolbox () {
     <block type="qdp_ESP8266_ir_re2"></block>
     <block type="qdp_ESP8266_ir_send_nec">
         <value name="data">
-            <shadow type="math_number">
-                <field name="NUM">0xCF</field>
+            <shadow type="text">
+                <field name="TEXT">0xCF</field>
             </shadow>
         </value>
         <value name="bits">
@@ -1672,7 +1672,7 @@ function addToolbox () {
     <block type="QH_char">
         <value name="VAR">
             <shadow type="text">
-                <field name="TEXT">text</field>
+                <field name="TEXT">A</field>
             </shadow>
         </value>
     </block>

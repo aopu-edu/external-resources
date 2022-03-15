@@ -845,7 +845,7 @@ function addMsg (Blockly) {
         QH_IrPress:'按下',
         QH_IrPressOn:'按住',
         qdp_ESP8266_ir_send_nec:'红外发射 %1 端口 %2 数值 %3',
-        qdp_ESP8266_ir_recv_raw:'红外接收转码 端口 %1',
+        qdp_ESP8266_ir_recv_raw:'红外接收解码 端口 %1',
         qdp_ESP8266_ir_send_raw:'红外发射 端口  %1  %2 数组 %3 数组长度 %4 频率 %5',
         qdp_ESP8266_BT_START:'启用蓝牙 名称 %1 %2',
         QH_noPrint:'不打印',

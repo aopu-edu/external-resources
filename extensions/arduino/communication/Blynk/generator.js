@@ -101,6 +101,7 @@ Blockly.Arduino.QDP_blynk_iot_CONNECTED = function() {
   return [code, Blockly.Arduino.ORDER_ATOMIC];
 };
 
+
 //从APP获取数据
 Blockly.Arduino.QDP_blynk_iot_get_data = function() {
   var Vpin = this.getFieldValue('Vpin');
@@ -108,16 +109,7 @@ Blockly.Arduino.QDP_blynk_iot_get_data = function() {
   branch = branch.replace(/(^\s*)|(\s*$)/g, "");//去除两端空格
   var code = 'BLYNK_WRITE('+Vpin+') {\n'+branch+'\n}';
 
-    Blockly.Arduino.definitions_['J1_return_BLYNK_APP_DISCONNECTED'] = code;
-};
-//从APP获取数据
-Blockly.Arduino.QDP_blynk_iot_get_data = function() {
-  var Vpin = this.getFieldValue('Vpin');
-  var branch = Blockly.Arduino.statementToCode(this, 'DO');
-  branch = branch.replace(/(^\s*)|(\s*$)/g, "");//去除两端空格
-  var code = 'BLYNK_WRITE('+Vpin+') {\n'+branch+'\n}';
-
-    Blockly.Arduino.definitions_['J1_return_BLYNK_APP_DISCONNECTED'] = code;
+    Blockly.Arduino.definitions_['J1_return_BLYNK_APP_DISCONNECTED'+Vpin] = code;
 };
 //物联网推送数据
 Blockly.Arduino.QDP_blynk_iot_push_data_request = function() {

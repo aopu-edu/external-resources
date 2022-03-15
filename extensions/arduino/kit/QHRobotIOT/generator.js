@@ -8313,6 +8313,7 @@ Blockly.Arduino.qdp_ESP8266_ir_re2 = function() {
 //红外发送
 Blockly.Arduino.qdp_ESP8266_ir_send_nec = function() {
   var data = Blockly.Arduino.valueToCode(this, 'data',Blockly.Arduino.ORDER_ATOMIC) || '0';
+        data = data.replace(/\"/g,'')
   var type = this.getFieldValue('TYPE');
   var PIN = this.getFieldValue('PIN');
   Blockly.Arduino.definitions_['define_QDPEsp8266Port'] = '#include <QDPEsp8266Port.h>';
@@ -10354,7 +10355,7 @@ Blockly.Arduino.QDP_esp_now_send = function () {
     Blockly.Arduino.definitions_['include_esp_now'] ='typedef struct struct_message {\n  char a[250];\n} struct_message;\nstruct_message myData;';
     Blockly.Arduino.definitions_['include_esp_now_send'+mac] ='uint8_t broadcastAddress'+mac1+'[] = {' + mac + '};';
     Blockly.Arduino.definitions_['include_esp_now_OnDataSent'] ='void OnDataSent(uint8_t *mac_addr, uint8_t sendStatus) {\n  if (sendStatus == 0){\n    ' + branch + '\n  }\n  else{\n    ' + branch1 + '\n  }\n}\n';
-    Blockly.Arduino.setups_['setup_serial_Serial'] = 'Serial.begin(115200);\n';
+    Blockly.Arduino.setups_['setup_qdprobot_serial'] = 'Serial.begin(9600);\n';
     Blockly.Arduino.setups_['setup_serial_open'] = 'WiFi.disconnect();\n';
     Blockly.Arduino.setups_['var_declare_esp_now'] = 'WiFi.mode(WIFI_STA);\n  if (esp_now_init() != 0) {\n    Serial.println("Error initializing ESP-NOW");\n    return;\n  }';
     var code='esp_now_set_self_role(ESP_NOW_ROLE_CONTROLLER);\nesp_now_register_send_cb(OnDataSent);\nesp_now_add_peer(broadcastAddress'+mac1+', ESP_NOW_ROLE_SLAVE, 1, NULL, 0);\nString(' + data + ').toCharArray(myData.a, sizeof(myData.a));\nesp_now_send(broadcastAddress'+mac1+', (uint8_t *) &myData, sizeof(myData));\n';
@@ -10369,7 +10370,7 @@ Blockly.Arduino.QDP_esp_now_receive = function () {
     Blockly.Arduino.definitions_['include_espnow'] ='#include <espnow.h>';
     Blockly.Arduino.definitions_['include_esp_now'] ='typedef struct struct_message {\n  char a[250];\n} struct_message;\nstruct_message myData;';
     Blockly.Arduino.definitions_['include_esp_now_receive'] ='void OnDataRecv(uint8_t * mac, uint8_t *incomingData, uint8_t len) {\n  memcpy(&myData, incomingData, sizeof(myData));\n  String mydata = String(myData.a);\n  ' + branch + '\n}';
-    Blockly.Arduino.setups_['setup_serial_Serial'] = 'Serial.begin(115200);';
+    Blockly.Arduino.setups_['setup_qdprobot_serial'] = 'Serial.begin(9600);\n';
     Blockly.Arduino.setups_['setup_serial_open'] = 'WiFi.disconnect();\n';
     Blockly.Arduino.setups_['var_declare_esp_now'] = 'WiFi.mode(WIFI_STA);\n  if (esp_now_init() != 0) {\n    Serial.println("Error initializing ESP-NOW");\n    return;\n  }';
     Blockly.Arduino.setups_['var_declare_esp_now_receive'] = 'esp_now_set_self_role(ESP_NOW_ROLE_SLAVE);\n  esp_now_register_recv_cb(OnDataRecv);';
@@ -10477,7 +10478,7 @@ Blockly.Arduino.qdp_timer = function () {
     //字符串
     Blockly.Arduino.QH_string = function() {
         var name = Blockly.Arduino.valueToCode(this, 'VAR',Blockly.Arduino.ORDER_ATOMIC) ||' ' ;
-        code = name;
+        code = 'String('+name+')';
         return [code, Blockly.Arduino.ORDER_NONE];
     };
 
@@ -10495,7 +10496,7 @@ Blockly.Arduino.qdp_timer = function () {
         var name = Blockly.Arduino.valueToCode(this, 'VAR',Blockly.Arduino.ORDER_ATOMIC) ||' ' ;
         name = name.replace(/\"/g,'');
         var value = Blockly.Arduino.valueToCode(this, 'VALUE',Blockly.Arduino.ORDER_ATOMIC) ||' ' ;
-        value = value.replace(/\"/g,'');
+       // value = value.replace(/\"/g,'');
         code = name+'\='+value+';\n';
         return code;
     };

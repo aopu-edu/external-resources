@@ -3625,7 +3625,7 @@ function addBlocks (Blockly) {
         init: function () {
             this.jsonInit({
                 message0: Blockly.Msg.qdp_esp32_BT_MASTER_READ,
-                "tooltip": "板载经典蓝牙。\n读取蓝牙接收缓存内的一个字节数据.返回int类型",
+                "tooltip": "板载经典蓝牙。\n读取蓝牙接收缓存内的一个字节数据.返回字符串char类型",
                 colour: QH_COMMUNICATE_color4,
                 colourTertiary: '#C0C0C0',
                 extensions: ['output_number']
@@ -3947,7 +3947,7 @@ function addBlocks (Blockly) {
                         name: 'KeyValue'
                     }             
                 ],
-                "tooltip": "蓝牙键盘动作",
+                "tooltip": "蓝牙键盘动作,单字节为键盘动作，多字符串时为“打印”输出",
                 colour: QH_COMMUNICATE_color4,
                 colourTertiary: '#C0C0C0',
                 extensions: ['shape_statement']
@@ -6233,6 +6233,7 @@ function addBlocks (Blockly) {
         }
     };
 
+    
      //esp_now接收数据
     Blockly.Blocks.QDP32_esp_now_receive = {
         init: function () {
@@ -7123,7 +7124,29 @@ function addBlocks (Blockly) {
             });
         }
     };
-
+ //串口打印
+    Blockly.Blocks.serialPrint = {
+        init: function () {
+            this.jsonInit({
+                message0: Blockly.Msg.serialPrint,
+                args0: [
+                    {
+                        type: 'field_dropdown',
+                        name: 'type',
+                        options:[[(Blockly.Msg.println),"println"], [(Blockly.Msg.print),"print"]]
+                    },
+                    {
+                        type: 'input_value',
+                        name: 'VALUE'
+                    }
+                ],
+                "tooltip": "串口打印",
+                colour:QH_COMMUNICATE_color1,
+                colourTertiary: '#C0C0C0',
+                extensions: ['shape_statement']
+            });
+        }
+    };
 
 
     return Blockly;

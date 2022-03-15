@@ -546,8 +546,8 @@ function addToolbox () {
     <block type="qdp_ESP32_ir_recv_raw"></block>
     <block type="qdp_esp32_ir_send_nec">
         <value name="data">
-            <shadow type="math_number">
-                <field name="NUM">0xCF</field>
+            <shadow type="text">
+                <field name="TEXT">0xCF</field>
             </shadow>
         </value>
         <value name="bits">
@@ -649,6 +649,13 @@ function addToolbox () {
         </value>
     </block>
     <label text="%{BKY_QH_SERIAL_LABEL}"></label>  
+    <block type="serialPrint">
+        <value name="VALUE">
+           <shadow type="text">
+                <field name="TEXT">2</field>
+            </shadow>
+        </value>
+    </block>
     <block type="qdp_esp32_serial_jieshouzhi">
         <value name="text">
             <shadow type="text">
@@ -692,14 +699,18 @@ function addToolbox () {
     </block>
     <block type="esp32_BleKeyboard_isConnected" ></block>
     <block type="esp32_BleKeyboard_KeyValue" ></block>
-    <block type="esp32_BleKeyboard_write_press" >
-        <field name="model">0</field>
-        <value name="KeyValue">
+     <block type="esp32_BleKeyboard_write_press" >
+            <field name="model">0</field>
+            <value name="KeyValue">
+        <block type="QH_char">
+        <value name="VAR">
             <shadow type="text">
                 <field name="TEXT">a</field>
             </shadow>
         </value>
     </block>
+   </value>
+ </block>
 </category>
 <category name="%{BKY_QH_MP3_CATEGORY}" id="QH_MP3_CATEGORY" colour="#42CCFF" secondaryColour="#42CCFF" iconURI="${QH_MP3_ICO}">
 	<block type="esp32_Mp3_init"></block>
@@ -1434,7 +1445,21 @@ function addToolbox () {
 	        </shadow>
 	    </value>
     </block>
-    <block type="QDP32_esp_now_receive"></block>
+    <block type="QDP32_esp_now_receive">
+        <statement name="success">
+            <block type="serialPrint">
+                <value name="VALUE">
+                        <block type="QH_variables_get">
+                            <value name="VAR">
+                                <shadow type="text">
+                                    <field name="TEXT">mydata</field>
+                                </shadow>
+                            </value>
+                        </block>
+                    </value>
+            </block> 
+        </statement>
+    </block>
     <label text="%{BKY_QH_WEATHER_LABEL}"></label>
     <block type="qdpWeatherGet">
     	<value name="data">
@@ -1529,7 +1554,7 @@ function addToolbox () {
     <block type="QH_char">
         <value name="VAR">
             <shadow type="text">
-                <field name="TEXT">text</field>
+                <field name="TEXT">A</field>
             </shadow>
         </value>
     </block>
